@@ -1,0 +1,1313 @@
+{
+  "app": {
+    "title": "SimSim",
+    "tagline": "Controla el vencimiento. Evita el desperdicio."
+  },
+  "settings": {
+    "language": {
+      "title": "Idioma",
+      "english": {
+        "primary": "Inglés",
+        "subtitle": "English"
+      },
+      "arabic": {
+        "primary": "Árabe",
+        "subtitle": "العربية"
+      },
+      "spanish": {
+        "primary": "Español",
+        "subtitle": "Español"
+      },
+      "arabic_initial": "ع"
+    },
+    "theme": {
+      "title": "Tema",
+      "light": "Modo claro",
+      "light_sub": "Limpio y claro",
+      "dark": "Modo oscuro",
+      "dark_sub": "Limpio y claro"
+    }
+  },
+  "common": {
+    "actions": {
+      "close": "Cerrar",
+      "delete": "Eliminar",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "save": "Guardar",
+      "apply": "Aplicar",
+      "retry": "Reintentar",
+      "edit": "Editar",
+      "add": "Añadir",
+      "scan_another": "Escanear otro",
+      "save_changes": "Guardar cambios",
+      "save_edit": "Guardar edición",
+      "ok": "OK"
+    },
+    "or": "o",
+    "optional_in_parens": "(opcional)",
+    "per_month": "/mes",
+    "per_month_spaced": "/ mes",
+    "per_year_spaced": "/ año",
+    "quantity": "Cantidad",
+    "category": "Categoría",
+    "location": "Ubicación",
+    "product_name": "Nombre del producto",
+    "barcode": "Código de barras",
+    "expiry_date": "Fecha de caducidad",
+    "expiry_labeled": "Caducidad: {date}",
+    "all": "Todos",
+    "filter": "Filtrar",
+    "select_all": "Seleccionar todo",
+    "inventory": "Inventario",
+    "error": {
+      "generic": "Algo salió mal",
+      "load_items": "No se pudieron cargar los elementos",
+      "load_menu": "No se pudo cargar el menú",
+      "load_inventory": "No se pudo cargar el inventario",
+      "load_categories": "No se pudieron cargar las categorías",
+      "load_places": "No se pudieron cargar las ubicaciones",
+      "load_history": "No se pudo cargar el historial",
+      "load_content": "No se pudo cargar el contenido"
+    },
+    "coming_soon": "Próximamente",
+    "items_count": "{count} artículos",
+    "items_pulled": "Retirado del estante"
+  },
+  "permissions": {
+    "denied_title": "Acceso restringido",
+    "denied_body": "Solo el propietario o el administrador de la tienda puede abrir esta sección."
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar sesión",
+      "subtitle": "Inicia sesión para acceder a tu cuenta, seguir el inventario y gestionar productos, categorías y fechas de caducidad.",
+      "google": "Continuar con Google",
+      "apple": "Continuar con Apple",
+      "guest": "Continuar como invitado"
+    },
+    "terms": {
+      "prefix": "Al iniciar sesión aceptas ",
+      "terms_link": "Términos de uso",
+      "middle": " y ",
+      "privacy_link": "Política de privacidad"
+    },
+    "messages": {
+      "google_soon": "El inicio de sesión con Google estará disponible pronto",
+      "apple_soon": "El inicio de sesión con Apple estará disponible pronto"
+    },
+    "errors": {
+      "apple_missing_id_token": "Apple no devolvió un token de identidad. Inténtalo de nuevo.",
+      "apple_sign_in_cancelled": "Se canceló el inicio de sesión con Apple.",
+      "apple_provider_not_enabled": "Apple Sign-In no está activado en Supabase. Abre Authentication → Providers → Apple y actívalo.",
+      "google_missing_id_token": "Google no devolvió un ID token. Comprueba GOOGLE_WEB_CLIENT_ID (cliente web en Google Cloud) y la configuración de la app.",
+      "google_sign_in_cancelled": "Se canceló el inicio de sesión con Google.",
+      "google_provider_not_enabled": "Google Sign-In no está activado en Supabase. Abre Authentication → Providers → Google y actívalo.",
+      "provider_not_enabled": "Este método de inicio de sesión no está activado en Supabase. Actívalo en Authentication → Providers.",
+      "sign_in_failed": "Error al iniciar sesión. Inténtalo de nuevo.",
+      "oauth_launch_failed": "No se pudo abrir la página de inicio de sesión. Inténtalo de nuevo.",
+      "legal_link_failed": "No se pudo abrir la página. Inténtalo de nuevo.",
+      "sign_out_failed": "No se pudo cerrar sesión. Inténtalo de nuevo.",
+      "delete_account_failed": "No se pudo eliminar tu cuenta. Comprueba la conexión e inténtalo de nuevo.",
+      "delete_account_not_signed_in": "Inicia sesión para eliminar tu cuenta.",
+      "supabase_not_configured": "Supabase no está configurado. Añade SUPABASE_URL y SUPABASE_ANON_KEY al compilar.",
+      "google_web_client_missing": "Google no está configurado. Añade GOOGLE_WEB_CLIENT_ID (ID de cliente OAuth Web) en .env — debe coincidir con Supabase Auth → Google y Firebase google-services.json.",
+      "google_developer_error": "Falló el inicio con Google (SHA-1 / ID de cliente). En Firebase, añade las huellas SHA-1 de debug y Play App Signing y verifica GOOGLE_WEB_CLIENT_ID.",
+      "google_web_client_mismatch": "Falló el inicio con Google: el ID de cliente Web no coincide con esta app. Usa el mismo ID OAuth Web en .env, Supabase y Firebase.",
+      "google_ios_config": "Google no está configurado en iOS. Añade el esquema URL REVERSED_CLIENT_ID y GIDClientID en Info.plist y vuelve a compilar."
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "recent": "Reciente",
+    "products": "Productos",
+    "inventory_tab": "Inventario",
+    "more": "Más"
+  },
+  "menu": {
+    "default_store_name": "Mercado fresco",
+    "role": {
+      "worker": "Personal",
+      "admin": "Administrador"
+    },
+    "section": {
+      "data_files": "Datos y archivos",
+      "data": "Datos"
+    },
+    "data": {
+      "backup": "Copia de seguridad",
+      "backup_sub": "Exportar o restaurar un archivo JSON de copia",
+      "import_excel": "Importar desde Excel",
+      "import_excel_sub": "Añade productos desde una hoja",
+      "export_excel": "Exportar a Excel",
+      "export_excel_sub": "Guarda tu lista como archivo"
+    },
+    "store": {
+      "title": "Configuración de la tienda",
+      "categories": "Categorías",
+      "categories_sub": "Lácteos, congelados, enlatados",
+      "places": "Ubicaciones",
+      "places_sub": "Congelador, estante A, almacén"
+    },
+    "app_settings": {
+      "title": "Ajustes de la app",
+      "expiry_notifications": "Avisos de caducidad",
+      "expiry_notifications_sub": "Ajusta horarios y recordatorios",
+      "theme": "Tema",
+      "theme_sub": "Modo claro y oscuro",
+      "language": "Idioma",
+      "language_sub": "Cambiar idioma"
+    },
+    "app_preferences": {
+      "title": "Preferencias de la app"
+    },
+    "alerts": {
+      "title": "Alertas"
+    },
+    "account_team": {
+      "title": "Cuenta y equipo",
+      "subscription": "Suscripción y facturación",
+      "subscription_sub": "Gestiona tu plan y pagos",
+      "employees": "Acceso de empleados",
+      "employees_sub": "Invita a tu equipo",
+      "switch_shop": "Cambiar tienda",
+      "switch_shop_sub": "Abre otra tienda a la que perteneces"
+    },
+    "branches": {
+      "title": "Mis sucursales",
+      "subtitle": "Cambia entre tus sucursales o abre una nueva",
+      "active": "Activa",
+      "switch_hint": "Toca para cambiar",
+      "create": "Crear nueva sucursal",
+      "create_title": "Nueva sucursal",
+      "create_message": "Dale un nombre a tu nueva sucursal. Serás su propietario y podrás cambiar a ella cuando quieras.",
+      "name_label": "Nombre de la sucursal",
+      "name_hint": "ej. Tienda del centro",
+      "create_cta": "Crear sucursal",
+      "creating": "Creando sucursal…",
+      "created": "Sucursal creada — ya estás en ella",
+      "create_failed": "No se pudo crear la sucursal. Inténtalo de nuevo.",
+      "switched": "Cambiado a {name}",
+      "products_count": "{count} productos",
+      "expired_count": "{count} caducados",
+      "manage_title": "Gestionar sucursal",
+      "save": "Guardar cambios",
+      "renamed": "Sucursal renombrada",
+      "delete": "Eliminar sucursal",
+      "delete_title": "¿Eliminar esta sucursal?",
+      "delete_message": "\"{name}\" y todos sus productos se eliminarán permanentemente. No se puede deshacer.",
+      "deleted": "Sucursal eliminada",
+      "delete_failed": "No se pudo eliminar la sucursal."
+    },
+    "account": {
+      "title": "Cuenta"
+    },
+    "team": {
+      "title": "Equipo"
+    },
+    "help": {
+      "title": "Ayuda e información",
+      "about": "Acerca de y soporte",
+      "about_sub": "Información y ayuda",
+      "terms": "Términos de uso",
+      "terms_sub": "Lee los términos de uso",
+      "privacy": "Política de privacidad",
+      "privacy_sub": "Cómo tratamos tus datos",
+      "support": "Soporte",
+      "support_sub": "Ayuda e información de contacto",
+      "sign_out": "Cerrar sesión",
+      "sign_out_sub": "Cierra la sesión de la cuenta",
+      "sign_out_confirm_title": "¿Cerrar sesión?",
+      "sign_out_confirm_message": "¿Quieres cerrar sesión? Tendrás que volver a iniciar sesión para acceder a tu tienda.",
+      "delete_account": "Eliminar cuenta",
+      "delete_account_sub": "Elimina permanentemente tu cuenta y todos los datos en la nube",
+      "delete_account_guest_sub": "Borra los datos locales de invitado en este dispositivo (sin correo ni exportación)",
+      "delete_account_confirm_title": "¿Eliminar cuenta?",
+      "delete_account_confirm_message": "Esto elimina permanentemente tu cuenta de SimSim, tus tiendas, inventario y acceso del equipo. Te enviaremos por correo un export JSON de tus datos. No se puede deshacer.",
+      "delete_account_success_title": "Cuenta eliminada",
+      "delete_account_success_message": "Tu cuenta se eliminó correctamente. Revisa tu correo para el archivo de exportación de datos que puedes descargar y guardar."
+    }
+  },
+  "backup": {
+    "title": "Copia y restauración",
+    "create": {
+      "section_title": "Crear copia",
+      "description": "Exporta todos los datos de esta tienda como archivo JSON para guardar o compartir.",
+      "action": "Crear archivo de copia"
+    },
+    "options": {
+      "title": "Guardar archivo de copia",
+      "download": "Descargar en el dispositivo",
+      "share": "Compartir archivo"
+    },
+    "restore": {
+      "section_title": "Restaurar copia",
+      "description": "Elige un archivo de copia, revisa su contenido y fusiona los datos seleccionados en esta tienda.",
+      "pick_file": "Elegir archivo de copia",
+      "select_title": "Restaurar desde copia",
+      "summary_title": "Detalles de la copia",
+      "shop_name": "Tienda",
+      "exported_at": "Exportado",
+      "shop_mismatch": "Esta copia se creó para otra tienda. Los datos se fusionarán en la tienda actual.",
+      "types_title": "Datos a restaurar",
+      "clear_all": "Quitar todo",
+      "confirm": "Restaurar selección",
+      "confirm_title": "¿Restaurar copia?",
+      "confirm_message": "Los datos seleccionados se fusionarán en esta tienda. Los elementos con el mismo ID se actualizarán."
+    },
+    "types": {
+      "categories": "Categorías",
+      "categories_sub": "Agrupaciones y etiquetas de productos",
+      "products": "Productos",
+      "products_sub": "Líneas de inventario y fechas de caducidad",
+      "places": "Ubicaciones",
+      "places_sub": "Almacenes y lugares de guardado",
+      "expiry_notifications": "Avisos de caducidad",
+      "expiry_notifications_sub": "Configuración de alertas y recordatorios"
+    },
+    "success": {
+      "exported": "Archivo de copia listo para compartir",
+      "downloaded": "Archivo guardado en tu dispositivo",
+      "restored": "Copia restaurada correctamente"
+    },
+    "error": {
+      "export_failed": "No se pudo crear la copia",
+      "restore_failed": "No se pudo restaurar la copia",
+      "invalid_file": "Archivo de copia no válido o no compatible",
+      "file_not_found": "No se encontró el archivo de copia",
+      "unsupported_version": "Esta versión de copia no es compatible",
+      "nothing_selected": "Selecciona al menos un tipo de datos para restaurar"
+    }
+  },
+  "shop_session": {
+    "picker_title": "Elige tu tienda",
+    "picker_subtitle": "Selecciona la tienda que quieres abrir",
+    "switch_title": "Cambiar tienda",
+    "switch_subtitle": "Abre otra tienda a la que perteneces",
+    "role_owner": "Propietario",
+    "role_manager": "Gerente",
+    "role_staff": "Personal",
+    "stale_session": "Esta sesión no coincide con ninguna cuenta en el servidor. Cerrando sesión — vuelve a iniciar sesión.",
+    "load_error": "No se pudo cargar la tienda",
+    "offline_first_launch": "Solo se necesita conexión a internet la primera vez para cargar tu tienda. Verifica la conexión e inténtalo de nuevo."
+  },
+  "home": {
+    "filter": {
+      "title": "Filtrar productos",
+      "subtitle": "Elige qué mostrar",
+      "category": "Categoría",
+      "warehouse": "Ubicación",
+      "clear": "Borrar filtros",
+      "info": "Los artículos se agrupan por caducidad automáticamente. Filtra por categoría o ubicación abajo.",
+      "all_categories": "Todas las categorías",
+      "all_locations": "Todas las ubicaciones",
+      "reset": "Restablecer",
+      "filtered": "Filtrado: {name}",
+      "showing": "mostrando {shown} de {total}",
+      "clear_short": "Borrar"
+    },
+    "notifications_soon": "La configuración de notificaciones llegará pronto",
+    "bucket": {
+      "expired": "Caducados ({count})",
+      "week": "En 7 días ({count})",
+      "two_weeks": "En 14 días ({count})",
+      "month": "En 30 días ({count})",
+      "two_months": "En 60 días ({count})",
+      "three_months": "En 90 días ({count})",
+      "later": "Más adelante ({count})"
+    },
+    "selection_confirm_title": "¿Retirar {count} artículos del estante?",
+    "selection_confirm_message": "Estos productos se eliminarán del inventario activo.",
+    "selection_pulled_success": "{count} artículos retirados del estante",
+    "product": {
+      "quantity_label": "Cantidad: {qty}"
+    },
+    "status": {
+      "expiring_soon": "Caduca pronto",
+      "expired": "Caducado",
+      "expired_short": "Caducado",
+      "expiring": "Por caducar",
+      "active": "Vigente"
+    },
+    "empty": {
+      "title": "Todo bien",
+      "body_prefix": "No hay artículos que caduquen el próximo mes, ",
+      "body_middle": "ajusta la ventana de alerta en ",
+      "notifications_settings": "ajustes de notificación"
+    },
+    "status_card": {
+      "products": "{count} productos"
+    },
+    "days": {
+      "expired": "Caducado",
+      "today": "Hoy",
+      "remaining": "{days}d rest."
+    },
+    "filter_active": "Filtro activo"
+  },
+  "scan": {
+    "title": "Escanear código",
+    "camera_hint": "Apunta la cámara al código. Asegúrate de que se vea completo.",
+    "scanner_hint": "Apunta el lector al código. Asegúrate de que se vea claro.",
+    "scanning": "Escaneando…",
+    "scanner_title": "Escáner",
+    "enter_manually": "Introducir datos manualmente",
+    "onboarding": {
+      "title": "Cómo funciona el escaneo",
+      "line1": "Escanea el código de barras para añadir el producto automáticamente.",
+      "line2": "Si la app no lo reconoce, añade el nombre y la foto una sola vez.",
+      "line3": "La próxima vez: solo escanea el código — SimSim rellena el resto.",
+      "done": "Listo"
+    },
+    "dialog": {
+      "scanned_title": "Código escaneado",
+      "detected_label": "Código detectado:",
+      "manual_title": "Introducir datos manualmente",
+      "barcode_hint": "Introduce el código de barras"
+    },
+    "camera_error": "Error de cámara",
+    "camera_permission_title": "La cámara está desactivada",
+    "camera_permission_body": "El acceso a la cámara está desactivado. Puedes introducir códigos manualmente abajo o activar la cámara para escanear.",
+    "camera_open_settings": "Abrir Ajustes",
+    "camera_enable": "Activar cámara",
+    "camera_why": {
+      "title": "Por qué SimSim necesita la cámara",
+      "body": "Usamos la cámara para escanear códigos de barras, leer fechas de caducidad y números de lote en etiquetas, y rellenar el nombre del producto desde una foto. Las fotos se quedan en tu dispositivo salvo que guardes un producto.",
+      "continue": "Continuar"
+    },
+    "add_success_title": "Producto añadido",
+    "add_success_body": "Escanea y añade otro artículo, o cierra la ventana.",
+    "add_success_continue": "Escanear otro",
+    "add_success_close": "Cerrar escáner",
+    "bluetooth": {
+      "title": "Conectando por Bluetooth…",
+      "subtitle": "Empareja tu dispositivo por Bluetooth.",
+      "scan_title": "Escanear código",
+      "device_settings": "Ajustes del dispositivo",
+      "continue_to_scanner": "Continuar al escáner",
+      "ios_pairing_note": "En iPhone o iPad, empareja el escáner primero en Ajustes → Bluetooth.",
+      "help": {
+        "title": "Cómo conectar el escáner",
+        "intro": "El escáner es un dispositivo Bluetooth que se empareja desde los ajustes de Bluetooth de tu teléfono, como unos auriculares. Una vez emparejado, envía los códigos escaneados directamente a la app.",
+        "step1": "Enciende el escáner y ponlo en modo de emparejamiento (normalmente manteniendo pulsado el botón de encendido hasta que parpadee la luz).",
+        "step2": "Abre los Ajustes de tu teléfono → Bluetooth.",
+        "step3": "En la lista de dispositivos disponibles, toca el escáner para emparejarlo. Suele aparecer con un nombre como \"Barcode Scanner\", \"BarCode\", \"SPP\" o el número de modelo.",
+        "step4": "Vuelve a esta app y empieza a escanear: los códigos se introducirán automáticamente.",
+        "name_hint": "¿No sabes cuál es tu dispositivo? Consulta el manual del escáner o la etiqueta inferior para ver su nombre Bluetooth exacto.",
+        "got_it": "Entendido"
+      }
+    },
+    "options": {
+      "scanner_title": "Lector de códigos",
+      "scanner_body": "Usa el lector integrado para escanear con precisión.",
+      "camera_title": "Cámara del teléfono",
+      "camera_body": "Captura el código del producto."
+    }
+  },
+  "inventory": {
+    "search_product_hint": "Buscar producto…",
+    "search_product_title": "Buscar productos",
+    "search_product_prompt": "Introduce un nombre de producto para buscar",
+    "search_product_empty": "No se encontraron productos",
+    "search_category_hint": "Buscar categoría…",
+    "search_place_hint": "Buscar ubicación…",
+    "add_product": "Añadir producto",
+    "section": {
+      "basics": "Datos del producto",
+      "details": "Detalles del producto"
+    },
+    "add_product_submit": "Añadir producto",
+    "scan_expiry": {
+      "button": "Escanear caducidad y lote con IA",
+      "scanning": "Leyendo fecha…",
+      "found": "Fecha de caducidad detectada",
+      "found_with_lot": "Fecha de caducidad y lote detectados",
+      "not_found": "No se pudo leer la fecha. Usa una foto más clara o ingrésala manualmente.",
+      "failed": "Error al escanear la fecha. Inténtalo de nuevo.",
+      "not_configured": "El escaneo de fecha con IA aún no está configurado.",
+      "camera_title": "Escanear caducidad y lote",
+      "aim_hint": "Encuadra la fecha EXP y el lote/batch impresos en el lateral — no el código de barras. Toca para enfocar y dispara",
+      "verify_hint": "Verifica siempre la fecha de caducidad después de añadir, para evitar errores",
+      "free_teaser_exhausted": "Has usado tus 5 escaneos gratis con IA. Introduce la fecha manualmente o pasa al Plan Negocios para acceso completo.",
+      "professional_requires_business": "El escaneo de caducidad con IA está disponible en el Plan Negocios. Introduce la fecha manualmente o actualiza al Plan Negocios."
+    },
+    "scan_label": {
+      "filled": "Datos rellenados desde la foto — verifica por favor",
+      "reading": "Leyendo datos del producto desde la foto…",
+      "not_found": "No se pudieron leer los datos de esta foto. Prueba una foto más clara de la etiqueta.",
+      "free_limit_banner": "Has alcanzado el límite de 5 usos gratis. Introdúcelo manualmente o mejora tu plan."
+    },
+    "shared_catalog_notice": "Tu foto, código de barras y detalles del producto pueden agregarse al catálogo compartido para otros usuarios de SimSim.",
+    "photo_notice_dialog": {
+      "title": "Añade productos más rápido",
+      "community_title": "Ayuda a hacer más rápida la entrada de productos",
+      "community_body": "Comparte una foto del producto para ayudar a SimSim a reconocerlo. La foto, el código de barras y los detalles se guardarán en nuestra base de datos compartida, lo que te ayudará a ti y a otros usuarios a autocompletar detalles en futuros escaneos con menos entrada manual.",
+      "ai_title": "Sugerencias de IA (solo Plan Negocios)",
+      "ai_body": "La IA analiza la foto para detectar y sugerir automáticamente el nombre y los detalles del producto en segundos.",
+      "privacy_title": "Protección de privacidad",
+      "privacy_body": "Evita capturar fotos que incluyan rostros, recibos, direcciones o información personal. Siempre puedes añadir el producto manualmente sin subir una foto.",
+      "agree_and_pick": "Aceptar y elegir foto",
+      "not_now": "Ahora no"
+    },
+    "add_category": "Añadir categoría",
+    "add_category_short": "Añadir",
+    "add_place": "Añadir ubicación",
+    "add_product_success": "Producto añadido",
+    "barcode": {
+      "invalid_length": "Introduce un código de 8 a 14 dígitos",
+      "resolving_category": "Buscando datos del producto — espera un momento"
+    },
+    "barcode_source": {
+      "offline_manual": "Sin conexión — introduce los datos manualmente",
+      "lookup_failed": "Producto no encontrado — introduce los datos manualmente"
+    },
+    "error": {
+      "product_name_required": "Introduce el nombre del producto",
+      "place_required": "Elige la ubicación",
+      "category_required": "Elige categoría",
+      "expiry_required": "Introduce la fecha de caducidad",
+      "expiry_in_past": "La fecha de caducidad no puede ser pasada",
+      "place_in_use": "No puedes eliminar la ubicación con productos vinculados."
+    },
+    "product": {
+      "photo": "Foto del producto",
+      "pick_photo": "Elige una foto",
+      "expiry": "Elige la fecha de caducidad",
+      "expiry_required_hint": "La fecha de caducidad es obligatoria — se usa para las alertas",
+      "expiry_choose_hint": "Elige la fecha de caducidad",
+      "lot_number": "Lote / Batch #",
+      "lot_number_hint": "Opcional",
+      "lot_number_placeholder": "ej. 5042321",
+      "cta_add": "+ Añadir producto",
+      "add_photo": "Añadir foto",
+      "change_photo": "Cambiar foto",
+      "image_offline": "Inicia sesión y conéctate para subir una foto.",
+      "image_upload_failed": "No se pudo subir la foto. Inténtalo de nuevo.",
+      "image_uploading": "Subiendo foto…",
+      "pick_source_camera": "Hacer foto",
+      "pick_source_gallery": "Elegir de la galería"
+    },
+    "date": {
+      "day": "Día",
+      "month": "Mes",
+      "year": "Año"
+    },
+    "select_place": "Elige ubicación",
+    "select_category": "Elige categoría",
+    "product_card": {
+      "expiry": "Caducidad: {date}",
+      "quantity_pieces": "Cantidad: {n} uds",
+      "location": "Ubicación",
+      "expiry_label": "Caducidad",
+      "quantity_label": "Cantidad",
+      "add_batch": "Añadir lote",
+      "add_batch_hint": "El nombre, la categoría y la ubicación se rellenan automáticamente — solo fija la fecha.",
+      "pick_expiry": "Seleccionar fecha de caducidad",
+      "save_batch": "Guardar lote"
+    },
+    "edit_product": {
+      "title": "Editar producto",
+      "applies_all": "Los cambios se aplican a todos los lotes de este producto.",
+      "delete_title": "¿Eliminar producto?",
+      "delete_message": "Se eliminará «{name}» y todos sus lotes de forma permanente. No se puede deshacer.",
+      "delete_pick_title": "Eliminar un lote",
+      "delete_pick_message": "Elige el lote que quieres eliminar. Los demás lotes no se verán afectados.",
+      "delete_whole": "Eliminar producto completo ({count} lotes)"
+    },
+    "badge": {
+      "batch_count": "{count} lotes",
+      "unit_count": "Stock {count} uds"
+    },
+    "category": {
+      "cta_add": "+ Añadir categoría",
+      "name_required": "Introduce el nombre de la categoría",
+      "already_exists": "Ya existe una categoría con este nombre",
+      "updated": "Categoría actualizada",
+      "added": "Categoría añadida",
+      "edit_title": "Editar categoría",
+      "add_title": "Añadir categoría",
+      "edit_subtitle": "Edita los datos abajo",
+      "add_subtitle": "Añade una categoría nueva",
+      "field_name": "Nombre de categoría",
+      "field_name_hint": "Nombre",
+      "field_icon": "Icono",
+      "emoji_hint": "¿Quieres un emoji específico? Toca la tecla de emoji 😊 en tu teclado y elige lo que quieras",
+      "field_preset": "Elige categoría",
+      "presets": {
+        "produce": "Frutas y verduras",
+        "dairy": "Lácteos",
+        "eggs": "Huevos",
+        "cheese": "Queso",
+        "meat_poultry": "Carne y aves",
+        "seafood": "Mariscos",
+        "refrigerated": "Alimentos refrigerados",
+        "frozen": "Congelados",
+        "bakery": "Panadería",
+        "prepared_meals": "Comidas preparadas",
+        "canned": "Enlatados",
+        "pantry": "Despensa / secos",
+        "spices": "Especias y condimentos",
+        "snacks": "Snacks",
+        "beverages": "Bebidas",
+        "supplements": "Suplementos",
+        "health_beauty": "Salud y belleza",
+        "baby": "Productos para bebés",
+        "cleaning": "Productos de limpieza",
+        "pet_food": "Comida y suministros para mascotas",
+        "pet_treats": "Golosinas para mascotas",
+        "pet_medicine": "Medicina para mascotas",
+        "donations": "Donaciones / banco de alimentos",
+        "warehouse": "Almacén / stock a granel",
+        "miscellaneous": "Varios"
+      },
+      "delete_title": "¿Eliminar categoría?",
+      "delete_message": "¿Estás seguro de que deseas eliminar la categoría «{name}»?",
+      "delete_message_with_products": "¿Estás seguro de que deseas eliminar «{name}»? Todos los productos de esta categoría «{name}» se eliminarán de forma permanente.",
+      "deleted": "Categoría eliminada",
+      "pick_title": "Elige una categoría",
+      "pick_subtitle": "Elige de las listas o crea la tuya",
+      "pick_create_custom": "Crear categoría personalizada",
+      "pick_added": "Añadida",
+      "pick_done": "Listo",
+      "deselect_blocked_title": "La categoría tiene productos",
+      "deselect_blocked_message": "No se puede quitar esta categoría porque todavía contiene productos. El dueño de la tienda debe eliminarla desde la página de Categorías.",
+      "deselect_blocked_ok": "Entendido"
+    },
+    "place": {
+      "cta_add": "+ Añadir ubicación",
+      "name_required": "Introduce el nombre de la ubicación",
+      "already_exists": "Ya existe una ubicación con este nombre",
+      "updated": "Ubicación actualizada",
+      "added": "Ubicación añadida",
+      "edit_title": "Editar ubicación",
+      "add_title": "Añadir ubicación",
+      "edit_subtitle": "Edita los datos abajo",
+      "add_subtitle": "Añade una ubicación nueva",
+      "field_name": "Nombre de ubicación",
+      "field_name_hint": "Nombre",
+      "delete_title": "¿Eliminar ubicación?",
+      "delete_message": "Se eliminará «{name}» de ubicaciones.",
+      "delete_message_with_products": "«{name}» tiene {count} producto(s). Se eliminará la ubicación y esos productos quedarán sin ubicación (los productos no se eliminan).",
+      "deleted": "Ubicación eliminada"
+    },
+    "filter": {
+      "title": "Filtrar productos",
+      "subtitle": "Elige qué mostrar",
+      "view": "Vista",
+      "oldest": "Caducidad más cercana",
+      "newest": "Caducidad más lejana",
+      "place": "Ubicación",
+      "select_place": "Elige ubicación",
+      "win_all": "Todos",
+      "win_week": "Esta semana",
+      "win_2weeks": "En 2 semanas",
+      "win_month": "En un mes",
+      "win_3months": "3+ meses",
+      "by_expiry": "Por caducidad"
+    },
+    "edit": {
+      "invalid_quantity": "Cantidad no válida",
+      "saved": "Cambios guardados",
+      "delete_batch_title": "¿Eliminar lote?",
+      "delete_batch_message": "Se eliminará este lote del producto.",
+      "deleted": "Eliminado",
+      "title": "Editar artículo",
+      "subtitle": "Actualiza los datos abajo",
+      "barcode_line": "Código: {code}",
+      "delete": "Eliminar"
+    },
+    "preset": {
+      "produce": "Frutas y verduras",
+      "dairy_eggs": "Lácteos y huevos",
+      "meat_poultry": "Carne y aves",
+      "seafood": "Mariscos",
+      "frozen": "Congelados",
+      "bakery": "Panadería",
+      "prepared": "Comida preparada",
+      "pantry": "Despensa y secos",
+      "canned": "Enlatados",
+      "snacks": "Snacks y dulces",
+      "beverages": "Bebidas",
+      "supplements": "Suplementos",
+      "health_beauty": "Salud y belleza",
+      "baby": "Productos para bebés",
+      "pet": "Mascotas",
+      "misc": "Varios"
+    },
+    "shared_images": {
+      "title": "Fotos del producto",
+      "subtitle": "Elige una foto compartida por otras tiendas o sube la tuya",
+      "empty": "Aún no hay fotos compartidas",
+      "use_own": "Subir mi propia foto",
+      "reported": "Imagen reportada",
+      "gallery_button": "Compartidas ({count})"
+    },
+    "section_header": {
+      "expired": "Caducados",
+      "this_week": "En 1 semana",
+      "two_weeks": "En 2 semanas",
+      "month": "En un mes",
+      "two_months": "En 2 meses",
+      "three_months": "En 3 meses",
+      "three_plus": "Más de 3 meses"
+    },
+    "product_count": "{count} productos"
+  },
+  "account": {
+    "avatar_initial": "F",
+    "page": {
+      "plans_title": "Planes y precios",
+      "employees_title": "Acceso de empleados",
+      "about_title": "Acerca de y soporte"
+    },
+    "about": {
+      "version_label": "Versión 1.0.0",
+      "app_title": "SimSim",
+      "tagline_p0": "⛔️ Deja de perder dinero en productos caducados.",
+      "tagline_p1": "Sabe qué caducará antes de que sea tarde.",
+      "why_title": "💡 ¿Por qué existe esta app?",
+      "why_body": "Las tiendas tiran productos caducados, a menudo por no avisar a tiempo. Esta app lo facilita.",
+      "why_scan_title": "Agregar rápido",
+      "why_scan_sub": "Escanea el código de barras con la cámara o el lector.",
+      "why_alerts_title": "Alertas tempranas",
+      "why_alerts_sub": "Recordatorios antes del vencimiento de los productos.",
+      "why_home_title": "Prioridades claras",
+      "why_home_sub": "Ve productos vencidos y próximos a vencer.",
+      "why_excel_title": "Tu equipo te ayuda",
+      "why_excel_sub": "Añade empleados para agilizar la entrada y actualización de productos.",
+      "designed_for_title": "Diseñada para",
+      "audience_grocery_title": "Tiendas de alimentación y supermercados",
+      "audience_grocery_sub": "Convierte productos próximos a caducar en oportunidades de venta.",
+      "audience_foodbank_title": "Bancos de alimentos",
+      "audience_foodbank_sub": "Llega a quien lo necesita",
+      "audience_small_title": "Tiendas pequeñas",
+      "audience_small_sub": "Controla stock",
+      "audience_warehouse_title": "Almacenes",
+      "audience_warehouse_sub": "Caducidad y calidad",
+      "audience_pet_title": "Productos para mascotas",
+      "audience_pet_sub": "Controla comida y suministros para mascotas.",
+      "audience_supplement_title": "Tiendas de suplementos",
+      "audience_supplement_sub": "Organiza vitaminas y proteínas fácilmente.",
+      "help_title": "¿Necesitas ayuda?",
+      "help_body": "¿Problemas o ideas? Leemos todo.",
+      "contact_label": "Contáctanos",
+      "website_label": "Sitio web",
+      "legal_title": "Legal y políticas",
+      "support_link": "Soporte"
+    },
+    "team": {
+      "member_you": "Tú",
+      "member_you_sub": "Acceso total",
+      "member_you_sub_staff": "Acceso de personal: escanear y gestionar inventario",
+      "member_pending_sub": "Esperando registro con el correo invitado"
+    },
+    "employee": {
+      "tab_invite": "Invitar personal",
+      "tab_team": "Miembros del equipo",
+      "tab_guide": "Guía y permisos",
+      "how_to_title": "Cómo funciona",
+      "step_0": "1. Introduce nombre y email.",
+      "step_1": "2. Se registran en SimSim con ese correo y se unen a tu tienda automáticamente.",
+      "step_2": "3. Pueden empezar ya.",
+      "permissions_title": "Permisos",
+      "perm_add_scan": "Añadir y escanear",
+      "perm_edit": "Editar detalles",
+      "perm_remove": "Eliminar caducados",
+      "perm_no_backup": "Sin copia de seguridad",
+      "perm_no_invite": "Sin invitar usuarios",
+      "perm_no_settings": "Sin ajustes de tienda",
+      "invite_title": "Invitar al equipo",
+      "name_label": "Nombre",
+      "name_hint": "Nombre",
+      "email_label": "Correo",
+      "email_hint": "Correo",
+      "send_invite": "Enviar invitación",
+      "team_title": "Tu equipo",
+      "team_count": "Tu equipo tiene {count} miembros",
+      "empty_title": "Sin miembros aún",
+      "empty_subtitle": "Invita a alguien",
+      "add_failure_already_member": "Esta persona ya forma parte de tu equipo.",
+      "add_failure_already_invited": "Ya hay una invitación pendiente para este correo.",
+      "add_failure_generic": "No se pudo añadir al miembro. Inténtalo de nuevo.",
+      "add_failure_invalid_email": "Introduce un correo electrónico válido.",
+      "add_failure_name_required": "Introduce el nombre de tu compañero.",
+      "add_failure_self": "Ya eres miembro de esta tienda.",
+      "add_failure_unauthorized": "No tienes permiso para añadir miembros.",
+      "add_failure_unknown_email": "No hay ninguna cuenta con este correo. Pide a tu compañero que se registre primero y vuelve a añadirlo.",
+      "add_success": "Miembro añadido. Recibirá una notificación en su teléfono.",
+      "add_success_invited": "Correo de invitación enviado. Tendrá acceso al abrir SimSim con este correo.",
+      "read_only_banner": "Solo el propietario de la tienda puede añadir o quitar miembros del equipo.",
+      "remove_failure_generic": "No se pudo eliminar al miembro. Inténtalo de nuevo.",
+      "remove_failure_last_owner": "No puedes quitar al único propietario de esta tienda.",
+      "remove_failure_self": "No puedes quitarte a ti mismo de esta forma.",
+      "remove_success": "Miembro eliminado.",
+      "remove_confirm_title": "¿Eliminar miembro?",
+      "remove_confirm_message": "¿Seguro que quieres eliminar a {name} de tu equipo? Perderá el acceso a la tienda.",
+      "remove_confirm_action": "Eliminar",
+      "remove_confirm_this_member": "este miembro",
+      "invite_note_email": "Introduce el mismo correo que tu compañero usa para iniciar sesión en SimSim (su Gmail o el correo vinculado a su cuenta de Apple).",
+      "invite_note_platforms": "Puedes invitar a empleados, usen Android o iPhone: todos comparten el mismo inventario y se sincroniza automáticamente."
+    },
+    "subscriptions": {
+      "ad_banner_title": "Cero anuncios. En todos los planes.",
+      "ad_banner_body": "Sin interrupciones mientras trabajas — Plan Gratis, Plan Profesional o Plan Negocios. Mismo precio en teléfono o tablet. 1 sucursal incluida.",
+      "current_section": "Tu plan actual",
+      "current_plan_free": "Plan Gratis",
+      "choose_section": "Elige un plan",
+      "compare_section": "Comparar planes",
+      "manage_hint": "Cancela o cambia la facturación cuando quieras en la configuración de suscripciones de App Store.",
+      "why_upgrade_title": "Por qué mejoran los negocios",
+      "why_bullet_0": "Registra cada producto, no solo 20",
+      "why_bullet_1": "Sube tu lista de productos directo desde Excel",
+      "why_bullet_2": "Deja que el personal escanee sin compartir tu teléfono",
+      "why_bullet_3": "Conecta un escáner de mano para trabajar más rápido (Plan Profesional y Plan Negocios)",
+      "faq_title": "Preguntas frecuentes",
+      "faq_q0": "¿Cuál es la diferencia entre el Plan Profesional y el Plan Negocios?",
+      "faq_a0": "Elige el Plan Profesional para una sola tienda: hasta 1.000 productos, Excel / CSV, hasta 3 miembros, soporte de escáner Bluetooth y nuestra base de +500M. Elige el Plan Negocios para una tienda mediana o grande: productos ilimitados, equipo ilimitado y escaneo de caducidad + lote con IA ilimitado para registrar mucho más rápido.",
+      "faq_q1": "¿Puedo cancelar cuando quiera?",
+      "faq_a1": "Sí — cancela cuando quieras. Sin contratos, sin penalizaciones, sin preguntas.",
+      "faq_q2": "¿Mi personal paga extra?",
+      "faq_a2": "No. Los miembros del equipo están incluidos en tu suscripción — 3 en el Plan Profesional, ilimitados en el Plan Negocios.",
+      "faq_q3": "¿Qué pasa con mis datos si bajo de plan?",
+      "faq_a3": "Nunca se borra nada. Al volver a Gratis, todos tus productos siguen a salvo y visibles — aunque superen 20. Solo no podrás añadir nuevos hasta bajar de 20 o mejorar de nuevo.",
+      "customer_center_button": "Gestionar suscripción",
+      "customer_center_closed": "Centro del cliente cerrado.",
+      "customer_center_opened": "Centro del cliente abierto.",
+      "errors": {
+        "customer_center_failed": "No se pudo abrir el Centro del cliente ahora mismo.",
+        "offering_not_available": "Esta opción de suscripción no está disponible ahora mismo.",
+        "paywall_failed": "No se pudo abrir la pantalla de pago ahora mismo.",
+        "purchase_failed": "La compra falló. Inténtalo de nuevo.",
+        "restore_failed": "No se pudieron restaurar las compras. Inténtalo de nuevo.",
+        "revenuecat_not_configured": "Las compras in-app no están configuradas en esta versión. Actualiza la app o inténtalo más tarde."
+      },
+      "paywall_button": "Ver pantalla de pago",
+      "paywall_closed": "Pantalla de pago cerrada.",
+      "guest_sign_in_required": "Inicia sesión primero para suscribirte a un plan.",
+      "purchase_cancelled": "Compra cancelada.",
+      "purchase_success": "Suscripción activada correctamente.",
+      "restore_button": "Restaurar compras",
+      "restore_cancelled": "Se canceló la restauración de compras.",
+      "restore_success": "Compras restauradas correctamente.",
+      "current_plan_professional": "Plan Profesional",
+      "current_plan_business": "Plan Negocios",
+      "current_plan_standard": "Plan Profesional",
+      "current_plan_pro": "Plan Negocios",
+      "offline_banner_message": "Estás desconectado. Los precios y suscripciones requieren conexión a internet.",
+      "offline_retry": "Reintentar",
+      "legal_footer_renewal": "Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del período actual. Puedes gestionar o cancelar en cualquier momento desde los Ajustes de tu cuenta de App Store.",
+      "legal_footer_consent": "Al suscribirte aceptas nuestros Términos de uso y la Política de privacidad."
+    },
+    "plans": {
+      "save_percent": "Ahorra 30%",
+      "cta_current": "✓ Tu plan actual",
+      "cta_manage": "Administrar suscripción",
+      "cta_included": "Incluido en tu plan",
+      "cta_upgrade": "Mejorar ahora",
+      "cta_offline": "Conéctate para suscribirte",
+      "badge_popular": "Más popular",
+      "free": {
+        "title": "Gratis",
+        "subtitle": "Ideal para probar SimSim",
+        "f0_label": "Hasta 20 productos",
+        "f0_sub": "Perfecto para empezar con una lista pequeña.",
+        "f1_label": "1 usuario — solo tú",
+        "f1_sub": "Usa SimSim en tu propio teléfono o tablet.",
+        "f2_label": "Escaneo de códigos con cámara",
+        "f2_sub": "Apunta la cámara, escanea y listo.",
+        "f3_label": "Escaneo de caducidad con IA (5 pruebas gratis)",
+        "f3_sub": "Prueba el escaneo con IA 5 veces; luego introduce la fecha a mano o pasa al Plan Negocios.",
+        "f4_label": "+4M productos de alimentación",
+        "f4_sub": "Reconoce al instante productos cotidianos al escanear.",
+        "f5_label": "Alertas de caducidad inteligentes",
+        "f5_sub": "Recibe avisos antes de que caduquen los productos.",
+        "f6_label": "Copia de seguridad y restauración",
+        "f6_sub": "Mantén tu lista a salvo con un archivo de copia.",
+        "f7_label": "Importar / exportar Excel / CSV",
+        "f7_sub": "Mejora al Plan Profesional o Plan Negocios para subir y descargar hojas de cálculo.",
+        "f8_label": "+500M base de datos de productos",
+        "f8_sub": "Mejora al Plan Profesional o Plan Negocios para nuestra mayor base de datos.",
+        "f9_label": "Soporte de escáner Bluetooth",
+        "f9_sub": "Disponible en el Plan Profesional y Plan Negocios."
+      },
+      "professional": {
+        "title": "Profesional",
+        "subtitle": "Espacio para crecer",
+        "f0_label": "Hasta 1.000 productos",
+        "f0_sub": "Espacio de sobra para ampliar tu inventario.",
+        "f1_label": "Hasta 3 miembros del equipo",
+        "f1_sub": "Tu personal escanea desde sus propios teléfonos.",
+        "f2_label": "Escaneo de códigos con cámara",
+        "f2_sub": "Apunta la cámara, escanea y listo.",
+        "f3_label": "Escaneo de caducidad con IA",
+        "f3_sub": "Disponible en el Plan Negocios — introduce la fecha a mano en el Plan Profesional, o mejora.",
+        "f4_label": "+500M productos locales e internacionales",
+        "f4_sub": "Nuestra mayor base de datos — muchos más artículos.",
+        "f5_label": "Alertas de caducidad inteligentes",
+        "f5_sub": "Recibe avisos antes de que caduquen los productos.",
+        "f6_label": "Copia de seguridad y restauración",
+        "f6_sub": "Mantén tu lista a salvo con un archivo de copia.",
+        "f7_label": "Importar / exportar Excel / CSV",
+        "f7_sub": "Sube o descarga tu lista con hojas de cálculo.",
+        "f8_label": "Soporte de escáner Bluetooth",
+        "f8_sub": "Usa un escáner Bluetooth de mano para un registro más rápido."
+      },
+      "business": {
+        "title": "Negocios",
+        "subtitle": "Todo, diseñado para un registro rápido",
+        "f0_label": "Escaneo automático de caducidad y lote/lote con IA",
+        "f0_sub": "Haz una foto: la IA rellena caducidad y lote si aparecen.",
+        "f1_label": "Entradas de productos ilimitadas",
+        "f1_sub": "Registra tantos productos como necesites — sin límite.",
+        "f2_label": "Miembros del equipo ilimitados",
+        "f2_sub": "Para tiendas grandes, varios turnos y equipos de almacén.",
+        "f3_label": "Soporte de escáner Bluetooth",
+        "f3_sub": "Usa un escáner Bluetooth de mano para un registro más rápido.",
+        "f4_label": "+500M productos locales e internacionales",
+        "f4_sub": "Nuestra mayor base de datos — muchos más artículos.",
+        "f5_label": "Escaneo de códigos con cámara",
+        "f5_sub": "Apunta la cámara, escanea y listo.",
+        "f6_label": "Alertas de caducidad inteligentes",
+        "f6_sub": "Recibe avisos antes de que caduquen los productos.",
+        "f7_label": "Copia de seguridad y restauración",
+        "f7_sub": "Mantén tu lista a salvo con un archivo de copia.",
+        "f8_label": "Importar / exportar Excel / CSV",
+        "f8_sub": "Sube o descarga tu lista con hojas de cálculo."
+      },
+      "pro": {
+        "title": "Negocios",
+        "subtitle": "Todo, diseñado para un registro rápido",
+        "f0_label": "Escaneo automático de caducidad y lote/lote con IA",
+        "f0_sub": "Haz una foto: la IA rellena caducidad y lote si aparecen.",
+        "f1_label": "Entradas de productos ilimitadas",
+        "f1_sub": "Registra tantos productos como necesites — sin límite.",
+        "f2_label": "Miembros del equipo ilimitados",
+        "f2_sub": "Para tiendas grandes, varios turnos y equipos de almacén.",
+        "f3_label": "Soporte de escáner Bluetooth",
+        "f3_sub": "Usa un escáner Bluetooth de mano para un registro más rápido.",
+        "f4_label": "+500M productos locales e internacionales",
+        "f4_sub": "Nuestra mayor base de datos — muchos más artículos.",
+        "f5_label": "Escaneo de códigos con cámara",
+        "f5_sub": "Apunta la cámara, escanea y listo.",
+        "f6_label": "Alertas de caducidad inteligentes",
+        "f6_sub": "Recibe avisos antes de que caduquen los productos.",
+        "f7_label": "Copia de seguridad y restauración",
+        "f7_sub": "Mantén tu lista a salvo con un archivo de copia.",
+        "f8_label": "Importar / exportar Excel / CSV",
+        "f8_sub": "Sube o descarga tu lista con hojas de cálculo."
+      },
+      "cta_upgrade_professional": "Mejorar al Plan Profesional",
+      "cta_upgrade_business": "Mejorar al Plan Negocios",
+      "cta_upgrade_standard": "Mejorar al Plan Profesional",
+      "cta_upgrade_pro": "Mejorar al Plan Negocios",
+      "badge_recommended": "★ Recomendado",
+      "standard": {
+        "title": "Profesional",
+        "subtitle": "Espacio para crecer",
+        "f0_label": "Hasta 1.000 productos",
+        "f0_sub": "Espacio de sobra para ampliar tu inventario.",
+        "f1_label": "Hasta 3 miembros del equipo",
+        "f1_sub": "Tu personal escanea desde sus propios teléfonos.",
+        "f2_label": "Escaneo de códigos con cámara",
+        "f2_sub": "Apunta la cámara, escanea y listo.",
+        "f3_label": "Escaneo de caducidad con IA",
+        "f3_sub": "Disponible en el Plan Negocios — introduce la fecha a mano en el Plan Profesional, o mejora.",
+        "f4_label": "+500M productos locales e internacionales",
+        "f4_sub": "Nuestra mayor base de datos — muchos más artículos.",
+        "f5_label": "Alertas de caducidad inteligentes",
+        "f5_sub": "Recibe avisos antes de que caduquen los productos.",
+        "f6_label": "Copia de seguridad y restauración",
+        "f6_sub": "Mantén tu lista a salvo con un archivo de copia.",
+        "f7_label": "Importar / exportar Excel / CSV",
+        "f7_sub": "Sube o descarga tu lista con hojas de cálculo.",
+        "f8_label": "Soporte de escáner Bluetooth",
+        "f8_sub": "Usa un escáner Bluetooth de mano para un registro más rápido."
+      }
+
+    }
+  },
+  "products_history": {
+    "delete_title": "¿Eliminar producto?",
+    "delete_message": "Se eliminará «{name}» del historial. No se puede deshacer.",
+    "saved": "Cambios guardados",
+    "section": {
+      "recent": "Añadidos recientemente",
+      "this_week": "Esta semana ({count})",
+      "older": "Anteriores ({count})"
+    },
+    "empty": "Sin elementos",
+    "empty_subtitle": "Los productos que agregues aparecerán aquí, agrupados por fecha de adición.",
+    "edit": {
+      "title": "Editar artículo",
+      "subtitle": "Actualiza los datos"
+    },
+    "field": {
+      "place": "Ubicación",
+      "category": "Categoría",
+      "expiry": "Caducidad",
+      "quantity": "Cantidad"
+    },
+    "card": {
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "added_by": "Añadido por: {name}",
+      "added_by_unknown": "Añadido por: —"
+    },
+    "days": {
+      "expired": "Caducado",
+      "today": "Caduca hoy",
+      "remaining": "Quedan {days} días",
+      "years_remaining": "Quedan {years} años",
+      "months_remaining": "Quedan {months} meses",
+      "years_ago": "Caducó hace {years} años",
+      "months_ago": "Caducó hace {months} meses",
+      "days_ago": "Caducó hace {days} días"
+    },
+    "error": {
+      "unknown_category": "Esa categoría ya no está disponible. Inténtalo de nuevo."
+    }
+  },
+  "notifications": {
+    "local": {
+      "channel_name": "Recordatorios de caducidad",
+      "channel_desc": "Recordatorios en el dispositivo para productos próximos a caducar",
+      "title": {
+        "zero": "No hay productos que venzan pronto",
+        "one": "1 producto vence pronto",
+        "other": "{} productos vencen pronto"
+      },
+      "body_days": "{name} — caduca en {days} días",
+      "body_today": "{name} — caduca hoy",
+      "duration_today": "hoy",
+      "duration_tomorrow": "mañana",
+      "duration_2_days": "en 2 días",
+      "duration_days": "en {count} días",
+      "duration_week": "en una semana",
+      "duration_weeks": "en {count} semanas",
+      "duration_2_weeks": "en 2 semanas",
+      "duration_month": "en un mes",
+      "duration_2_months": "en 2 meses",
+      "duration_3_months": "en 3 meses",
+      "duration_early_week": "una semana",
+      "duration_early_2_weeks": "2 semanas",
+      "duration_early_month": "un mes",
+      "duration_early_2_months": "2 meses",
+      "duration_early_3_months": "3 meses",
+      "late_title_one": "1 producto caduca {duration}",
+      "late_title_other": "{count} productos caducan {duration}",
+      "early_title_one": "Recordatorio: 1 producto caduca {duration}",
+      "early_title_other": "Recordatorio: {count} productos caducan {duration}",
+      "early_title_duration_one": "1 producto vence pronto en {duration}",
+      "early_title_duration_other": "{count} productos vencen pronto en {duration}",
+      "body_separator": ", ",
+      "digest_body_more": "{names} … ( +{count} más)",
+      "digest_within_7": "{count} en 7 días",
+      "digest_more_14": "{count} más en 14 días",
+      "digest_more_30": "{count} más en 30 días",
+      "digest_more_max": "{count} más en {days} días",
+      "digest_join": ", ",
+      "digest_join_and": " y ",
+      "unnamed_product": "Un producto"
+    },
+    "title": "Avisos de caducidad",
+    "send_on": "Enviar aviso el",
+    "which_day": "¿Qué día recordarte?",
+    "my_alerts": "Mis avisos",
+    "my_alerts_sub": "Define cuántos días antes de caducar dispara cada aviso",
+    "alert1": "Primer aviso (opcional)",
+    "alert1_sub": "Un mes antes o la fecha que elijas",
+    "alert2": "Segundo aviso (opcional)",
+    "alert2_sub": "Último aviso al caducar",
+    "phone_reminders": "Recordatorios del teléfono",
+    "phone_reminders_sub": "Avisos al teléfono",
+    "pick_time_hint": "Elige una hora del día",
+    "day": {
+      "sunday": "Domingo",
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado"
+    },
+    "ampm": {
+      "am": "a. m.",
+      "pm": "p. m."
+    },
+    "alert1_on_expiry_day": "El día de caducidad",
+    "alert1_days_summary": "{days} días antes de caducar",
+    "alert2_on_expiry_day": "El día de caducidad",
+    "alert2_days_summary": "{days} días antes de caducar",
+    "alert1_days_title": "Primer aviso — días antes",
+    "alert1_days_hint": "p. ej. 30",
+    "alert2_days_title": "Segundo aviso — días antes",
+    "alert2_days_hint": "p. ej. 7",
+    "save_success": "Ajustes de avisos guardados",
+    "save_error_generic": "No se pudieron guardar los ajustes. Inténtalo de nuevo.",
+    "validation_no_weekdays": "Selecciona al menos un día",
+    "validation_alert2_gt_alert1": "El segundo aviso debe ser en o antes del primero",
+    "alert_days_error_empty": "Introduce un número de días",
+    "alert_days_error_range": "Introduce un número entre {min} y {max}",
+    "pick_weekday_hint": "Elige los días en los que quieres avisos",
+    "header": "Mis alertas",
+    "header_sub": "Estas alertas son solo para ti — cada miembro del equipo configura las suyas. Nada aquí es compartido.",
+    "offline_note": "Los recordatorios se programan en este dispositivo y funcionan sin conexión. Las notificaciones push son un respaldo cuando estás en línea.",
+    "which_alerts": "¿Qué alertas quiero?",
+    "early_title": "Alerta temprana",
+    "optional": "opcional",
+    "early_desc": "Tiempo suficiente para descontar o rotar stock",
+    "last_title": "Alerta final",
+    "last_desc": "Última oportunidad para retirar el producto del estante",
+    "when_title": "¿Cuándo me llegan?",
+    "send_at_time": "Enviar mis alertas a las",
+    "work_days": "En mis días laborales",
+    "early_opt_7": "7 días",
+    "early_opt_14": "2 semanas",
+    "early_opt_30": "1 mes",
+    "early_opt_60": "2 meses",
+    "early_opt_90": "3 meses",
+    "last_opt_0": "Día de caducidad",
+    "last_opt_1": "1 día antes",
+    "last_opt_3": "3 días antes",
+    "last_opt_7": "7 días antes",
+    "summary_label": "En palabras simples",
+    "summary_none": "Nada — ambas alertas están apagadas.",
+    "summary_send_at": "Este teléfono recibirá una alerta a las {time}",
+    "summary_early_part": "temprano ({label})",
+    "summary_last_part": "y en el último momento ({label})",
+    "summary_join": ", ",
+    "next_label": "Próxima notificación:",
+    "next_today": "Hoy {time}",
+    "next_tomorrow": "Mañana {time}",
+    "next_on_day": "{day} {time}",
+    "permission_off_title": "Notificaciones desactivadas",
+    "permission_off_body": "Las notificaciones del sistema están desactivadas para esta app, así que no recibirás avisos. Actívalas para continuar.",
+    "permission_enable_btn": "Activar notificaciones",
+    "test_button": "Enviar una notificación de prueba",
+    "test_local_button": "Probar notificación local",
+    "test_fcm_button": "Probar push (FCM)",
+    "test_sending": "Enviando…",
+    "test_sent": "Prueba enviada: deberías ver una ahora y otra en ~1 minuto.",
+    "test_local_sent": "Prueba local enviada: deberías ver una ahora y otra en ~1 minuto.",
+    "test_fcm_sent": "Prueba FCM enviada: comprueba que llega un push a este dispositivo.",
+    "test_no_devices": "Las notificaciones están desactivadas. Activa las notificaciones primero.",
+    "test_not_signed_in": "Inicia sesión para enviar una notificación de prueba.",
+    "test_failed": "No se pudo programar la alarma local de prueba. Revisa el permiso de notificaciones.",
+    "test_fcm_failed": "No se pudo enviar la prueba FCM. Revisa la red y el registro del token.",
+    "test_push_title": "SimSim",
+    "test_push_body": "Notificación de prueba: tus avisos funcionan ✅"
+  },
+  "subscription": {
+    "employee_guard_notice": "Solo los administradores de la tienda pueden acceder a los planes y suscripciones. Comunícate con el administrador.",
+    "billing": {
+      "choose_save": "Elige y ahorra",
+      "monthly": "Mensual",
+      "monthly_caption": "Facturado cada mes",
+      "yearly": "Anual",
+      "yearly_caption": "Facturado cada año"
+    },
+    "why_upgrade_cta": "Toca para ver las ventajas del plan",
+    "member": {
+      "owner": "Propietario",
+      "pending": "Pendiente"
+    },
+    "paywall": {
+      "title": "Función Profesional",
+      "title_business": "Función Negocios",
+      "upgrade_cta": "Actualizar ahora",
+      "later": "Quizás más tarde",
+      "understood": "Entendido",
+      "employee_business_notice": "Esta función requiere el plan Business. Comunícate con el administrador de la tienda para actualizar la suscripción.",
+      "employee_upgrade_notice": "Esta función requiere una actualización de suscripción. Comunícate con el administrador de la tienda para gestionar los planes.",
+      "feature_team": "Invitar empleados y gestionar permisos del equipo es una función de pago. Actualiza para usarla.",
+      "feature_import": "Importar productos desde un archivo Excel es una función de pago. Actualiza para usarla.",
+      "feature_export": "Descargar y exportar tus productos a Excel es una función de pago. Actualiza para usarla.",
+      "feature_expiry_scan": "Escanear la fecha de caducidad con la cámara es una función de pago. Actualiza para acceder.",
+      "product_limit": "Has alcanzado el límite de tu plan ({limit} productos). Mejora tu plan para añadir más.",
+      "branch_limit": "Has alcanzado el límite de sucursales de tu plan ({limit} sucursales). Mejora a un plan superior para añadir más sucursales.",
+      "feature_bluetooth_scanner": "El escáner de códigos de barras por Bluetooth (dispositivo externo) está disponible en el Plan Profesional y Plan Negocios. Actualiza para usarlo.",
+      "team_limit": "Has alcanzado el tamaño de equipo de tu plan ({limit} miembros). Actualiza al Plan Negocios para miembros ilimitados."
+    }
+  },
+  "store": {
+    "edit": {
+      "validation": "Introduce el nombre de la tienda",
+      "error": "No se pudo guardar el nombre. Comprueba la conexión e inténtalo de nuevo.",
+      "success": "Tienda actualizada",
+      "title": "Editar tienda",
+      "subtitle": "Edita el nombre abajo",
+      "field": "Nombre de la tienda",
+      "hint": "Nombre de la tienda"
+    }
+  },
+  "products_export": {
+    "action": "Exportar ({count} productos)",
+    "columns": {
+      "added_at": "Fecha de alta",
+      "barcode": "Código de barras",
+      "category": "Categoría",
+      "expiration_date": "Fecha de caducidad",
+      "expiry_status": "Estado de caducidad",
+      "product_name": "Nombre del producto",
+      "quantity": "Cantidad",
+      "section_title": "Columnas incluidas",
+      "title": "Tu archivo incluirá estas columnas",
+      "warehouse": "Almacén"
+    },
+    "status": {
+      "ok": "OK",
+      "expiring_soon": "Por caducar",
+      "expired": "Caducado"
+    },
+    "empty": {
+      "message": "Aún no hay productos para exportar. Añade productos en Inventario y vuelve aquí."
+    },
+    "error": {
+      "export_failed": "No se pudo crear el archivo de exportación",
+      "load_failed": "No se pudo cargar la vista previa",
+      "no_products": "Ningún producto coincide con el alcance seleccionado"
+    },
+    "options": {
+      "download": "Descargar en el dispositivo",
+      "share": "Compartir archivo",
+      "title": "Guardar archivo de exportación"
+    },
+    "scope": {
+      "all_sub": "Todas las líneas de inventario de esta tienda ({count} en total)",
+      "all_title": "Todos los productos",
+      "category_sub": "Toca para elegir una categoría",
+      "category_title": "Una categoría",
+      "pick_category": "Elegir categoría",
+      "section_description": "Elige exportar todo el inventario o una sola categoría.",
+      "section_title": "Alcance de exportación"
+    },
+    "success": {
+      "downloaded": "Archivo guardado en tu dispositivo",
+      "exported": "Archivo de productos listo para compartir"
+    },
+    "summary": {
+      "categories": "Categorías",
+      "format_badge": "XLSX · Google Sheets · Excel",
+      "products": "Productos"
+    },
+    "tips": "El archivo es XLSX y se abre en Excel, Google Sheets y apps similares. Los nombres en árabe se muestran correctamente.",
+    "title": "Exportar productos"
+  },
+  "products_import": {
+    "columns": {
+      "added_at": "Fecha de alta",
+      "barcode": "Código de barras",
+      "category": "Categoría",
+      "expiration_date": "Fecha de caducidad",
+      "optional": "Opcional",
+      "product_name": "Nombre del producto",
+      "quantity": "Cantidad",
+      "required": "Obligatorio",
+      "section_title": "Columnas de la hoja",
+      "title": "Tu archivo debe incluir estas columnas",
+      "warehouse": "Almacén"
+    },
+    "confirm": {
+      "import_valid": "Importar filas válidas",
+      "partial_body": "{valid} filas son válidas y {invalid} tienen errores. Las filas no válidas se omitirán.",
+      "partial_title": "¿Importar solo filas válidas?"
+    },
+    "error": {
+      "empty_file": "El archivo no tiene filas de productos",
+      "import_failed": "No se pudieron importar los productos",
+      "invalid_date": "Fecha de caducidad no válida",
+      "invalid_file": "Archivo no válido o no compatible",
+      "invalid_quantity": "Cantidad no válida",
+      "invalid_row": "Fila no válida",
+      "missing_category": "Falta la categoría",
+      "missing_date": "Falta la fecha de caducidad",
+      "missing_name": "Falta el nombre del producto",
+      "missing_quantity": "Falta la cantidad",
+      "missing_warehouse": "Falta el almacén",
+      "parse_failed": "No se pudo leer el archivo",
+      "template_failed": "No se pudo crear la plantilla",
+      "unsupported_format": "Formato de archivo no compatible"
+    },
+    "format": {
+      "section_description": "Prepara una hoja con las columnas siguientes antes de subirla.",
+      "section_title": "Formato del archivo",
+      "tip_date": "Las fechas deben ser YYYY-MM-DD (ej. 2026-12-31). También se aceptan celdas de fecha de Excel.",
+      "tip_export_compatible": "Los archivos exportados de SimSim se pueden reimportar directamente.",
+      "tip_first_sheet": "Se leen todas las hojas que contienen productos.",
+      "tip_ignore_status": "El estado de caducidad se calcula automáticamente — no necesitas una columna expiry_status.",
+      "title": "Requisitos de formato"
+    },
+    "pick_file": "Elegir archivo",
+    "preview": {
+      "action": "Importar {count} productos",
+      "all_invalid": "Las {count} filas no son válidas — corrige el archivo e inténtalo de nuevo",
+      "auto_create_title": "Se crearán automáticamente",
+      "file_name": "Archivo",
+      "footer_summary": "Se importarán {valid}, se omitirán {invalid}",
+      "invalid_rows": "Filas no válidas",
+      "invalid_summary": "Se omitirán {count} filas",
+      "new_categories": "Nuevas categorías: {names}",
+      "new_warehouses": "Nuevos almacenes: {names}",
+      "ready": "Listo",
+      "review_title": "Revisar antes de importar",
+      "summary_title": "Resumen de importación",
+      "title": "Revisar importación",
+      "total_rows": "Filas totales",
+      "truncated": "Mostrando {shown} de {total} filas",
+      "valid_rows": "Válidas",
+      "will_not_import": "No se importará"
+    },
+    "success": {
+      "imported": "Productos importados correctamente",
+      "imported_over_limit": "Se importaron {imported} productos. Se omitieron {skipped} porque tu plan está limitado a {limit} productos. Mejora tu plan para añadir más."
+    },
+    "summary": {
+      "format_badge": "XLSX · CSV · XLS"
+    },
+    "table": {
+      "barcode": "Código",
+      "category": "Categoría",
+      "expiration_date": "Caducidad",
+      "product_name": "Producto",
+      "quantity": "Cant.",
+      "row": "#",
+      "status": "Estado",
+      "warehouse": "Almacén"
+    },
+    "template": {
+      "action": "Descargar plantilla",
+      "options_title": "Guardar plantilla",
+      "download": "Descargar en el dispositivo",
+      "share": "Compartir archivo",
+      "downloaded": "Plantilla guardada en tu dispositivo"
+    },
+    "tips": "Usa la primera fila para los encabezados. Los archivos exportados de SimSim funcionan directamente. Se admite texto en árabe.",
+    "title": "Importar productos",
+    "default_category": "Sin categoría",
+    "error_fix": {
+      "missing_name": "Añade un nombre de producto en la columna «Producto» y reintenta.",
+      "invalid_quantity": "Escribe un número entero (0 o más) en la columna «Cantidad», o déjala vacía para 0.",
+      "missing_date": "Añade una fecha de caducidad en la columna «Fecha de caducidad», p. ej. 2027-10-24.",
+      "invalid_date": "Formato de fecha no reconocido — usa p. ej. 2027-10-24 o 24/10/2027.",
+      "invalid_row": "Revisa y corrige esta fila, luego vuelve a importar."
+    }
+  },
+  "onboarding": {
+    "language": {
+      "title": "Elige el idioma de la aplicación"
+    }
+  },
+  "sync": {
+    "auto_hint": "Se sincroniza cada 20 segundos",
+    "syncing": "Sincronizando…",
+    "synced_just_now": "ahora",
+    "synced_secs": "{n}s",
+    "synced_mins": "{n}m",
+    "synced_prefix": "sinc."
+  },
+  "guest_notice": {
+    "title": "⚠️ Aviso",
+    "got_it": "Entendido",
+    "body": "Puedes entrar como invitado para hacerte una idea de cómo funciona la app. Ten en cuenta que tus datos se guardan solo en este teléfono; no se harán copias de seguridad ni estarán disponibles en otro dispositivo a menos que crees una cuenta gratuita."
+  }
+}

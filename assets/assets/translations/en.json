@@ -1,0 +1,1313 @@
+{
+  "app": {
+    "title": "SimSim",
+    "tagline": "Track expiry. Stop waste."
+  },
+  "settings": {
+    "language": {
+      "title": "Language",
+      "english": {
+        "primary": "English",
+        "subtitle": "English"
+      },
+      "arabic": {
+        "primary": "Arabic",
+        "subtitle": "العربية"
+      },
+      "spanish": {
+        "primary": "Spanish",
+        "subtitle": "Español"
+      },
+      "arabic_initial": "ع"
+    },
+    "theme": {
+      "title": "Theme",
+      "light": "Light mode",
+      "light_sub": "Clean and bright",
+      "dark": "Dark mode",
+      "dark_sub": "Clean and bright"
+    }
+  },
+  "common": {
+    "actions": {
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "save": "Save",
+      "apply": "Apply",
+      "retry": "Retry",
+      "edit": "Edit",
+      "add": "Add",
+      "scan_another": "Scan another",
+      "save_changes": "Save changes",
+      "save_edit": "Save edit",
+      "close": "Close",
+      "ok": "OK"
+    },
+    "or": "or",
+    "optional_in_parens": "(optional)",
+    "per_month": "/mo",
+    "per_month_spaced": "/ month",
+    "per_year_spaced": "/ year",
+    "quantity": "Quantity",
+    "category": "Category",
+    "location": "Location",
+    "product_name": "Product name",
+    "barcode": "Barcode",
+    "expiry_date": "Expiry date",
+    "expiry_labeled": "Expiry: {date}",
+    "all": "All",
+    "filter": "Filter",
+    "select_all": "Select all",
+    "inventory": "Inventory",
+    "error": {
+      "generic": "Something went wrong",
+      "load_items": "Could not load items",
+      "load_menu": "Could not load menu",
+      "load_inventory": "Could not load inventory",
+      "load_categories": "Could not load categories",
+      "load_places": "Could not load locations",
+      "load_history": "Could not load history",
+      "load_content": "Could not load content"
+    },
+    "coming_soon": "Coming soon",
+    "items_count": "{count} items",
+    "items_pulled": "Pulled from shelf"
+  },
+  "permissions": {
+    "denied_title": "Access restricted",
+    "denied_body": "Only the store owner or manager can open this section."
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Sign in to access your account, track inventory, and manage products, categories, and expiry dates.",
+      "google": "Continue with Google",
+      "apple": "Continue with Apple",
+      "guest": "Continue as guest"
+    },
+    "terms": {
+      "prefix": "By signing in you agree to ",
+      "terms_link": "Terms of use",
+      "middle": " and ",
+      "privacy_link": "Privacy policy"
+    },
+    "messages": {
+      "google_soon": "Google sign-in will be enabled soon",
+      "apple_soon": "Apple sign-in will be enabled soon"
+    },
+    "errors": {
+      "apple_missing_id_token": "Apple did not return an identity token. Try again.",
+      "apple_sign_in_cancelled": "Apple sign-in was cancelled.",
+      "apple_provider_not_enabled": "Apple sign-in is not enabled in Supabase. Open Authentication → Providers → Apple and turn it on.",
+      "google_missing_id_token": "Google did not return an ID token. Check GOOGLE_WEB_CLIENT_ID (Web client ID from Google Cloud) and your app configuration.",
+      "google_sign_in_cancelled": "Google sign-in was cancelled.",
+      "google_provider_not_enabled": "Google sign-in is not enabled in Supabase. Open Authentication → Providers → Google and turn it on.",
+      "provider_not_enabled": "This sign-in method is not enabled in Supabase. Enable it under Authentication → Providers.",
+      "sign_in_failed": "Sign-in failed. Please try again.",
+      "oauth_launch_failed": "Could not open the sign-in page. Try again.",
+      "legal_link_failed": "Could not open the page. Try again.",
+      "sign_out_failed": "Could not sign out. Try again.",
+      "delete_account_failed": "Could not delete your account. Check your connection and try again.",
+      "delete_account_not_signed_in": "Sign in to delete your account.",
+      "supabase_not_configured": "Supabase is not configured. Add SUPABASE_URL and SUPABASE_ANON_KEY when building.",
+      "google_web_client_missing": "Google sign-in is not configured. Add GOOGLE_WEB_CLIENT_ID (Web OAuth client ID) to .env — it must match Supabase Auth → Google and Firebase google-services.json.",
+      "google_developer_error": "Google sign-in failed (SHA-1 / client ID mismatch). In Firebase, add your debug and Play App Signing SHA-1 fingerprints and ensure GOOGLE_WEB_CLIENT_ID is the Web client ID.",
+      "google_web_client_mismatch": "Google sign-in failed: Web client ID does not match this app. Use the same OAuth Web client ID in .env, Supabase Google provider, and Firebase.",
+      "google_ios_config": "Google sign-in is not configured for iOS. Add the REVERSED_CLIENT_ID URL scheme and GIDClientID in Info.plist, then rebuild the app."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "recent": "Recent",
+    "products": "Products",
+    "inventory_tab": "Inventory",
+    "more": "More"
+  },
+  "menu": {
+    "default_store_name": "Fresh Market",
+    "role": {
+      "worker": "Staff",
+      "admin": "Admin"
+    },
+    "section": {
+      "data_files": "Data & files",
+      "data": "Data"
+    },
+    "data": {
+      "backup": "Back up data",
+      "backup_sub": "Export or restore a JSON backup file",
+      "import_excel": "Import from Excel",
+      "import_excel_sub": "Add products from a spreadsheet",
+      "export_excel": "Export to Excel",
+      "export_excel_sub": "Save your product list as a file"
+    },
+    "store": {
+      "title": "Store settings",
+      "categories": "Categories",
+      "categories_sub": "Dairy, frozen, canned",
+      "places": "Locations",
+      "places_sub": "Freezer, shelf A, warehouse"
+    },
+    "app_settings": {
+      "title": "App settings",
+      "expiry_notifications": "Expiry notifications",
+      "expiry_notifications_sub": "Set alert timing and reminders",
+      "theme": "Theme",
+      "theme_sub": "Switch light and dark mode",
+      "language": "Language",
+      "language_sub": "Change app language"
+    },
+    "app_preferences": {
+      "title": "App preferences"
+    },
+    "alerts": {
+      "title": "Alerts"
+    },
+    "account_team": {
+      "title": "Account & team",
+      "subscription": "Subscription & billing",
+      "subscription_sub": "Manage your plan and payments",
+      "employees": "Employee access",
+      "employees_sub": "Invite team members to your store",
+      "switch_shop": "Switch shop",
+      "switch_shop_sub": "Open another shop you belong to"
+    },
+    "branches": {
+      "title": "My branches",
+      "subtitle": "Switch between your branches or open a new one",
+      "active": "Active",
+      "switch_hint": "Tap to switch",
+      "create": "Create new branch",
+      "create_title": "New branch",
+      "create_message": "Give your new branch a name. You'll be its owner and can switch to it anytime.",
+      "name_label": "Branch name",
+      "name_hint": "e.g. Downtown store",
+      "create_cta": "Create branch",
+      "creating": "Creating branch…",
+      "created": "Branch created — you're now in it",
+      "create_failed": "Couldn't create the branch. Please try again.",
+      "switched": "Switched to {name}",
+      "products_count": "{count} products",
+      "expired_count": "{count} expired",
+      "manage_title": "Manage branch",
+      "save": "Save changes",
+      "renamed": "Branch renamed",
+      "delete": "Delete branch",
+      "delete_title": "Delete this branch?",
+      "delete_message": "\"{name}\" and all its products will be permanently removed. This can't be undone.",
+      "deleted": "Branch deleted",
+      "delete_failed": "Couldn't delete the branch."
+    },
+    "account": {
+      "title": "Account"
+    },
+    "team": {
+      "title": "Team"
+    },
+    "help": {
+      "title": "Help & info",
+      "about": "About & support",
+      "about_sub": "App info and help",
+      "terms": "Terms of use",
+      "terms_sub": "Read the terms of use",
+      "privacy": "Privacy policy",
+      "privacy_sub": "How we handle your data",
+      "support": "Support",
+      "support_sub": "Help articles and contact info",
+      "sign_out": "Sign out",
+      "sign_out_sub": "Sign out from the app store account",
+      "sign_out_confirm_title": "Sign out?",
+      "sign_out_confirm_message": "Do you want to sign out of your account? You'll need to sign in again to access your store.",
+      "delete_account": "Delete account",
+      "delete_account_sub": "Permanently delete your account and all cloud data",
+      "delete_account_guest_sub": "Wipe local guest data on this device (no email or export)",
+      "delete_account_confirm_title": "Delete account?",
+      "delete_account_confirm_message": "This permanently deletes your SimSim account, owned stores, inventory, and team access. We will email you a JSON export of your data so you can keep a copy. This cannot be undone.",
+      "delete_account_success_title": "Account deleted",
+      "delete_account_success_message": "Your account was deleted successfully. Check your email for a data export attachment you can download and keep."
+    }
+  },
+  "backup": {
+    "title": "Backup & restore",
+    "create": {
+      "section_title": "Create backup",
+      "description": "Export all data for this store as a JSON file you can save or share.",
+      "action": "Create backup file"
+    },
+    "options": {
+      "title": "Save backup file",
+      "download": "Download to device",
+      "share": "Share file"
+    },
+    "restore": {
+      "section_title": "Restore backup",
+      "description": "Choose a backup file, review what it contains, then merge selected data into this store.",
+      "pick_file": "Choose backup file",
+      "select_title": "Restore from backup",
+      "summary_title": "Backup details",
+      "shop_name": "Store",
+      "exported_at": "Exported",
+      "shop_mismatch": "This backup was created for a different store. Data will be merged into the current store.",
+      "types_title": "Data to restore",
+      "clear_all": "Clear all",
+      "confirm": "Restore selected",
+      "confirm_title": "Restore backup?",
+      "confirm_message": "Selected data will be merged into this store. Existing items with the same ID will be updated."
+    },
+    "types": {
+      "categories": "Categories",
+      "categories_sub": "Product groupings and labels",
+      "products": "Products",
+      "products_sub": "Inventory lines and expiry dates",
+      "places": "Locations",
+      "places_sub": "Warehouses and storage places",
+      "expiry_notifications": "Expiry notifications",
+      "expiry_notifications_sub": "Alert timing and reminder settings"
+    },
+    "success": {
+      "exported": "Backup file ready to share",
+      "downloaded": "File saved to your device",
+      "restored": "Backup restored successfully"
+    },
+    "error": {
+      "export_failed": "Could not create backup",
+      "restore_failed": "Could not restore backup",
+      "invalid_file": "Invalid or unsupported backup file",
+      "file_not_found": "Backup file not found",
+      "unsupported_version": "This backup version is not supported",
+      "nothing_selected": "Select at least one data type to restore"
+    }
+  },
+  "shop_session": {
+    "picker_title": "Choose your shop",
+    "picker_subtitle": "Select which store workspace you want to open",
+    "switch_title": "Switch shop",
+    "switch_subtitle": "Open another shop you belong to",
+    "role_owner": "Owner",
+    "role_manager": "Manager",
+    "role_staff": "Staff",
+    "stale_session": "This session does not match any account on the server. Signing you out — please sign in again.",
+    "load_error": "Could not load shop",
+    "offline_first_launch": "An internet connection is needed only the first time to load your shop. Check your connection and try again."
+  },
+  "home": {
+    "filter": {
+      "title": "Filter products",
+      "subtitle": "Choose what to show",
+      "category": "Category",
+      "warehouse": "Location",
+      "clear": "Clear filters",
+      "info": "Items are grouped by expiry automatically. Narrow by category or location below.",
+      "all_categories": "All categories",
+      "all_locations": "All locations",
+      "reset": "Reset",
+      "filtered": "Filtered: {name}",
+      "showing": "showing {shown} of {total}",
+      "clear_short": "Clear"
+    },
+    "notifications_soon": "Notification settings page coming soon",
+    "bucket": {
+      "expired": "Expired ({count})",
+      "week": "Within 7 days ({count})",
+      "two_weeks": "Within 14 days ({count})",
+      "month": "Within 30 days ({count})",
+      "two_months": "Within 60 days ({count})",
+      "three_months": "Within 90 days ({count})",
+      "later": "Later ({count})"
+    },
+    "selection_confirm_title": "Pull {count} items from shelf?",
+    "selection_confirm_message": "These products will be removed from your active inventory.",
+    "selection_pulled_success": "{count} items pulled from shelf",
+    "product": {
+      "quantity_label": "Quantity: {qty}"
+    },
+    "status": {
+      "expiring_soon": "Expiring soon",
+      "expired": "Expired",
+      "expired_short": "Expired",
+      "expiring": "Expiring",
+      "active": "OK"
+    },
+    "empty": {
+      "title": "All good",
+      "body_prefix": "No items expiring in the next month, ",
+      "body_middle": "adjust the alert window in ",
+      "notifications_settings": "notification settings"
+    },
+    "status_card": {
+      "products": "{count} products"
+    },
+    "days": {
+      "expired": "Expired",
+      "today": "Today",
+      "remaining": "{days}d left"
+    },
+    "filter_active": "Filter on"
+  },
+  "scan": {
+    "title": "Scan barcode",
+    "camera_hint": "Hold the barcode in the frame. Tap to focus for close-ups — flip the lens button for ultra-wide if blurry.",
+    "scanner_hint": "Point the scanner at the code in front of you. Make sure it is clearly visible.",
+    "scanning": "Scanning…",
+    "scanner_title": "Scanner",
+    "enter_manually": "Enter data manually",
+    "onboarding": {
+      "title": "How barcode scanning works",
+      "body": "Scan the barcode to add the product automatically.\nIf the app doesn't recognize it, add the product name and photo once.\nNext time: just scan the barcode — SimSim fills in the rest!\n\nDone",
+      "line1": "Scan the barcode to add the product automatically.",
+      "line2": "If the app doesn't recognize it, add the product name and photo once.",
+      "line3": "Next time: just scan the barcode — SimSim fills in the rest!",
+      "done": "Done"
+    },
+    "dialog": {
+      "scanned_title": "Barcode scanned",
+      "detected_label": "Detected code:",
+      "manual_title": "Enter data manually",
+      "barcode_hint": "Enter barcode number here"
+    },
+    "camera_error": "Camera error",
+    "camera_permission_title": "Camera is disabled",
+    "camera_permission_body": "Camera access is off. You can enter barcodes manually below, or enable camera access to scan.",
+    "camera_open_settings": "Open Settings",
+    "camera_enable": "Enable camera",
+    "camera_why": {
+      "title": "Why SimSim needs the camera",
+      "body": "We use the camera to scan barcodes, read expiry dates and lot numbers on labels, and fill the product name from a photo you take. Photos stay on your device unless you save a product.",
+      "continue": "Continue"
+    },
+    "add_success_title": "Product added",
+    "add_success_body": "Scan and add another item, or close the window.",
+    "add_success_continue": "Scan another",
+    "add_success_close": "Close scanner",
+    "bluetooth": {
+      "title": "Connecting via Bluetooth…",
+      "subtitle": "Pair your device easily via Bluetooth to use all features.",
+      "scan_title": "Scan barcode",
+      "device_settings": "Device settings",
+      "continue_to_scanner": "Continue to scanner",
+      "ios_pairing_note": "On iPhone or iPad, pair your scanner in Settings → Bluetooth first.",
+      "help": {
+        "title": "How to connect the scanner",
+        "intro": "The scanner is a Bluetooth device that pairs through your phone's Bluetooth settings — like a headset. Once paired, it sends scanned barcodes straight into the app.",
+        "step1": "Turn on the scanner and put it in pairing mode (usually by holding the power button until its light blinks).",
+        "step2": "Open your phone's Settings → Bluetooth.",
+        "step3": "In the list of available devices, tap the scanner to pair it. It often appears with a name like \"Barcode Scanner\", \"BarCode\", \"SPP\", or the model number.",
+        "step4": "Come back to this app and start scanning — barcodes will be entered automatically.",
+        "name_hint": "Not sure which device is yours? Check the scanner's manual or the label on its underside for its exact Bluetooth name.",
+        "got_it": "Got it"
+      }
+    },
+    "options": {
+      "scanner_title": "Barcode scanner",
+      "scanner_body": "Use the built-in scanner for fast, accurate barcode scanning.",
+      "camera_title": "Phone camera",
+      "camera_body": "Capture a product barcode photo for recognition."
+    }
+  },
+  "inventory": {
+    "search_product_hint": "Search product name…",
+    "search_product_title": "Search products",
+    "search_product_prompt": "Enter a product name to search",
+    "search_product_empty": "No products found",
+    "search_category_hint": "Search category…",
+    "search_place_hint": "Search location…",
+    "add_product": "Add product",
+    "section": {
+      "basics": "Product basics",
+      "details": "Product details"
+    },
+    "add_product_submit": "Add product",
+    "scan_expiry": {
+      "button": "Scan expiry date and batch with AI",
+      "scanning": "Reading date…",
+      "found": "Expiry date detected",
+      "found_with_lot": "Expiry date and lot/batch detected",
+      "not_found": "Couldn't read a date. Try a clearer photo or enter it manually.",
+      "failed": "Date scan failed. Please try again.",
+      "not_configured": "AI date scan isn't set up yet.",
+      "camera_title": "Scan expiry and lot",
+      "aim_hint": "Frame the printed EXP date and LOT/batch on the pack side — not the barcode. Tap to focus, then shoot",
+      "verify_hint": "Always double-check the expiry date after adding, to avoid mistakes",
+      "free_teaser_exhausted": "You've used your 5 free AI scans. Enter the expiry date manually, or upgrade to Business for full access.",
+      "professional_requires_business": "AI expiry scanning is available on Business. Enter the date manually, or upgrade to Business."
+    },
+    "scan_label": {
+      "filled": "Product details filled from the photo — please verify",
+      "reading": "Reading product details from the photo…",
+      "not_found": "Couldn't read product details from this photo. Try a clearer label photo.",
+      "free_limit_banner": "You have reached your limit of 5 free usages. Enter it manually or upgrade."
+    },
+    "shared_catalog_notice": "Your photo, barcode, and product details may be added to the shared catalog for other SimSim users.",
+    "photo_notice_dialog": {
+      "title": "Add products faster",
+      "community_title": "Help make product entry faster",
+      "community_body": "Share a product photo to help SimSim recognize it. The photo, barcode, and product details will be saved to our shared product database, helping you and other users auto-fill product details on future scans with less manual entry.",
+      "ai_title": "AI suggestions (Business plan only)",
+      "ai_body": "AI analyzes the photo to automatically detect and suggest the product name and details in seconds.",
+      "privacy_title": "Privacy protection",
+      "privacy_body": "Avoid capturing photos that include faces, receipts, addresses, or personal info. You can always add the product manually without uploading a photo.",
+      "agree_and_pick": "Agree & choose photo",
+      "not_now": "Not now"
+    },
+    "add_category": "Add category",
+    "add_category_short": "Add",
+    "add_place": "Add location",
+    "add_product_success": "Product added",
+    "barcode": {
+      "invalid_length": "Enter a barcode with 8 to 14 digits",
+      "resolving_category": "Still looking up product details — wait a moment"
+    },
+    "barcode_source": {
+      "offline_manual": "Offline — enter product details manually",
+      "lookup_failed": "Product not found — enter details manually"
+    },
+    "error": {
+      "product_name_required": "Enter product name",
+      "place_required": "Choose location",
+      "category_required": "Choose category",
+      "expiry_required": "Please enter the expiry date",
+      "expiry_in_past": "Expiry date cannot be in the past",
+      "place_in_use": "Cannot delete this location while products are linked to it."
+    },
+    "product": {
+      "photo": "Product photo",
+      "pick_photo": "Choose a product photo",
+      "expiry": "Choose expiry date",
+      "expiry_required_hint": "Expiry date is required — used for expiry alerts",
+      "expiry_choose_hint": "Choose expiry date",
+      "lot_number": "Lot / Batch #",
+      "lot_number_hint": "Optional",
+      "lot_number_placeholder": "e.g. 5042321",
+      "cta_add": "+ Add product",
+      "add_photo": "Add photo",
+      "change_photo": "Change photo",
+      "image_offline": "Sign in and connect to upload a photo.",
+      "image_upload_failed": "Could not upload photo. Try again.",
+      "image_uploading": "Uploading photo…",
+      "pick_source_camera": "Take photo",
+      "pick_source_gallery": "Choose from gallery"
+    },
+    "date": {
+      "day": "Day",
+      "month": "Month",
+      "year": "Year"
+    },
+    "select_place": "Choose location",
+    "select_category": "Choose category",
+    "product_card": {
+      "expiry": "Expiry: {date}",
+      "quantity_pieces": "Quantity: {n} pcs",
+      "location": "Location",
+      "expiry_label": "Expiry",
+      "quantity_label": "Quantity",
+      "add_batch": "Add batch",
+      "add_batch_hint": "Name, category & location are auto-filled — just set the date.",
+      "pick_expiry": "Select expiry date",
+      "save_batch": "Save batch"
+    },
+    "edit_product": {
+      "title": "Edit Product",
+      "applies_all": "Changes apply to every batch of this product.",
+      "delete_title": "Delete product?",
+      "delete_message": "“{name}” and all its batches will be permanently deleted. This can't be undone.",
+      "delete_pick_title": "Delete a batch",
+      "delete_pick_message": "Pick the batch you want to delete. The other batches won't be affected.",
+      "delete_whole": "Delete whole product ({count} batches)"
+    },
+    "badge": {
+      "batch_count": "{count} batches",
+      "unit_count": "Stock {count} units"
+    },
+    "category": {
+      "cta_add": "+ Add category",
+      "name_required": "Please enter category name",
+      "already_exists": "A category with this name already exists",
+      "updated": "Category updated",
+      "added": "Category added",
+      "edit_title": "Edit category",
+      "add_title": "Add category",
+      "edit_subtitle": "Edit category details below",
+      "add_subtitle": "Add a new category using the fields below",
+      "field_name": "Category name",
+      "field_name_hint": "Enter category name",
+      "field_icon": "Category icon",
+      "emoji_hint": "Want a specific emoji? Tap the emoji 😊 key on your keyboard and pick anything",
+      "field_preset": "Choose category",
+      "presets": {
+        "produce": "Produce",
+        "dairy": "Dairy",
+        "eggs": "Eggs",
+        "cheese": "Cheese",
+        "meat_poultry": "Meat & Poultry",
+        "seafood": "Seafood",
+        "refrigerated": "Refrigerated Foods",
+        "frozen": "Frozen Foods",
+        "bakery": "Bakery",
+        "prepared_meals": "Prepared Meals",
+        "canned": "Canned Foods",
+        "pantry": "Pantry / Dry Goods",
+        "spices": "Spices & Seasonings",
+        "snacks": "Snacks",
+        "beverages": "Beverages",
+        "supplements": "Supplements",
+        "health_beauty": "Health & Beauty",
+        "baby": "Baby Products",
+        "cleaning": "Cleaning Supplies",
+        "pet_food": "Pet Food & Supplies",
+        "pet_treats": "Pet Treats",
+        "pet_medicine": "Pet Medicine",
+        "donations": "Donations / Food Bank",
+        "warehouse": "Warehouse / Bulk Stock",
+        "miscellaneous": "Miscellaneous"
+      },
+      "delete_title": "Delete category?",
+      "delete_message": "Are you sure you want to delete “{name}”?",
+      "delete_message_with_products": "Are you sure you want to delete “{name}”? ALL items under this category “{name}” will be permanently deleted.",
+      "deleted": "Category deleted",
+      "pick_title": "Choose a category",
+      "pick_subtitle": "Pick from ready categories or create your own",
+      "pick_create_custom": "Create custom category",
+      "pick_added": "Added",
+      "pick_done": "Done",
+      "deselect_blocked_title": "Category has products",
+      "deselect_blocked_message": "This category can't be removed because it still contains products. The shop owner must delete it from the Categories page.",
+      "deselect_blocked_ok": "OK"
+    },
+    "place": {
+      "cta_add": "+ Add location",
+      "name_required": "Please enter location name",
+      "already_exists": "A location with this name already exists",
+      "updated": "Location updated",
+      "added": "Location added",
+      "edit_title": "Edit location",
+      "add_title": "Add location",
+      "edit_subtitle": "Edit location details below",
+      "add_subtitle": "Add a new location using the fields below",
+      "field_name": "Location name",
+      "field_name_hint": "Enter location name",
+      "delete_title": "Delete location?",
+      "delete_message": "“{name}” will be removed from locations.",
+      "delete_message_with_products": "“{name}” has {count} product(s). The location will be deleted and those products will have no location (the products themselves are kept).",
+      "deleted": "Location deleted"
+    },
+    "filter": {
+      "title": "Filter Products",
+      "subtitle": "Choose what to show",
+      "view": "View",
+      "oldest": "Closest to expiry",
+      "newest": "Furthest from expiry",
+      "place": "Location",
+      "select_place": "Choose location",
+      "win_all": "All",
+      "win_week": "This week",
+      "win_2weeks": "Within 2 weeks",
+      "win_month": "Within a month",
+      "win_3months": "3+ months",
+      "by_expiry": "By expiry"
+    },
+    "edit": {
+      "invalid_quantity": "Enter a valid quantity",
+      "saved": "Changes saved",
+      "delete_batch_title": "Delete batch?",
+      "delete_batch_message": "This batch will be removed from the product.",
+      "deleted": "Deleted",
+      "title": "Edit item",
+      "subtitle": "Update product details below",
+      "barcode_line": "Barcode: {code}",
+      "delete": "Delete"
+    },
+    "preset": {
+      "produce": "Produce",
+      "dairy_eggs": "Dairy & Eggs",
+      "meat_poultry": "Meat & Poultry",
+      "seafood": "Seafood",
+      "frozen": "Frozen Foods",
+      "bakery": "Bakery",
+      "prepared": "Prepared Foods",
+      "pantry": "Pantry & Dry Goods",
+      "canned": "Canned Foods",
+      "snacks": "Snacks & Sweets",
+      "beverages": "Beverages",
+      "supplements": "Supplements",
+      "health_beauty": "Health & Beauty",
+      "baby": "Baby Products",
+      "pet": "Pet Supplies",
+      "misc": "Miscellaneous"
+    },
+    "shared_images": {
+      "title": "Product photos",
+      "subtitle": "Pick a photo shared by other stores, or upload your own",
+      "empty": "No shared photos yet",
+      "use_own": "Upload my own photo",
+      "reported": "Image reported",
+      "gallery_button": "Shared ({count})"
+    },
+    "section_header": {
+      "expired": "Expired",
+      "this_week": "Within 1 week",
+      "two_weeks": "Within 2 weeks",
+      "month": "Within a month",
+      "two_months": "Within 2 months",
+      "three_months": "Within 3 months",
+      "three_plus": "Over 3 months"
+    },
+    "product_count": "{count} products"
+  },
+  "account": {
+    "avatar_initial": "F",
+    "page": {
+      "plans_title": "Plans & pricing",
+      "employees_title": "Employee access",
+      "about_title": "About & support"
+    },
+    "about": {
+      "version_label": "Version 1.0.0",
+      "app_title": "SimSim",
+      "tagline_p0": "⛔️ Stop losing money on expired products.",
+      "tagline_p1": "Know what will expire before it is too late.",
+      "why_title": "💡 Why does this app exist?",
+      "why_body": "Stores throw away expired shelf stock, often because nobody noticed in time. That is direct money lost. This app makes it easy to track—no spreadsheets or sticky notes.",
+      "why_scan_title": "Quick Add",
+      "why_scan_sub": "Scan the barcode with the camera or scanner device.",
+      "why_alerts_title": "Early Alerts",
+      "why_alerts_sub": "Reminders before product expiration.",
+      "why_home_title": "Clear Priorities",
+      "why_home_sub": "View expired and near-expired products.",
+      "why_excel_title": "Your team helps you",
+      "why_excel_sub": "Add employees to speed up product entry and updates.",
+      "designed_for_title": "Designed for",
+      "audience_grocery_title": "Grocery stores & supermarkets",
+      "audience_grocery_sub": "Turn near-expiry products into sales opportunities.",
+      "audience_foodbank_title": "Food banks",
+      "audience_foodbank_sub": "Ensure donated food reaches those in need",
+      "audience_small_title": "Small shops",
+      "audience_small_sub": "Track snacks, drinks and goods",
+      "audience_warehouse_title": "Food warehouses",
+      "audience_warehouse_sub": "Track shelf life for quality and less waste",
+      "audience_pet_title": "Pet supplies",
+      "audience_pet_sub": "Track pet food and supplies.",
+      "audience_supplement_title": "Supplement stores",
+      "audience_supplement_sub": "Organize vitamins and proteins easily.",
+      "help_title": "Need help?",
+      "help_body": "Problems or ideas? We read every message and are happy to help.",
+      "contact_label": "Contact us",
+      "website_label": "Website",
+      "legal_title": "Legal & policies",
+      "support_link": "Support"
+    },
+    "team": {
+      "member_you": "You",
+      "member_you_sub": "Full access—manages everything",
+      "member_you_sub_staff": "Staff access—can scan and manage inventory",
+      "member_pending_sub": "Waiting to sign up with the invited email"
+    },
+    "employee": {
+      "tab_invite": "Invite staff",
+      "tab_team": "Team members",
+      "tab_guide": "Guide & permissions",
+      "how_to_title": "How it works",
+      "step_0": "1. Enter your teammate’s name and email below.",
+      "step_1": "2. They sign up in SimSim with that email and join your store automatically.",
+      "step_2": "3. They can start scanning and managing right away.",
+      "permissions_title": "Staff permissions",
+      "perm_add_scan": "Add products and scan barcodes",
+      "perm_edit": "Edit product details and quantities",
+      "perm_remove": "Remove expired or old products",
+      "perm_no_backup": "Cannot back up or restore data",
+      "perm_no_invite": "Cannot invite or remove other users",
+      "perm_no_settings": "Cannot change store or subscription settings",
+      "invite_title": "Invite teammates",
+      "name_label": "Name",
+      "name_hint": "Enter name here",
+      "email_label": "Email",
+      "email_hint": "Enter email here",
+      "send_invite": "Send invite",
+      "team_title": "Your team",
+      "team_count": "Your team currently has {count} members",
+      "empty_title": "No team members yet",
+      "empty_subtitle": "Invite someone to get started",
+      "add_failure_already_member": "This person is already on your team.",
+      "add_failure_already_invited": "An invite is already pending for this email.",
+      "add_failure_generic": "Could not add member. Please try again.",
+      "add_failure_invalid_email": "Please enter a valid email address.",
+      "add_failure_name_required": "Please enter the teammate’s name.",
+      "add_failure_self": "You are already a member of this store.",
+      "add_failure_unauthorized": "You don’t have permission to add members.",
+      "add_failure_unknown_email": "No account found for this email. Ask your teammate to sign up first, then add them again.",
+      "add_success": "Team member added. They'll get a notification on their phone.",
+      "add_success_invited": "Invite email sent. They'll get access when they open SimSim with this email.",
+      "read_only_banner": "Only the store owner can add or remove team members.",
+      "remove_failure_generic": "Could not remove member. Please try again.",
+      "remove_failure_last_owner": "You can’t remove the only owner of this store.",
+      "remove_failure_self": "You can’t remove yourself this way.",
+      "remove_success": "Member removed.",
+      "remove_confirm_title": "Remove member?",
+      "remove_confirm_message": "Are you sure you want to remove {name} from your team? They will lose access to the store.",
+      "remove_confirm_action": "Remove",
+      "remove_confirm_this_member": "this member",
+      "invite_note_email": "Enter the same email your teammate uses to sign in to SimSim (their Gmail, or the email linked to their Apple account).",
+      "invite_note_platforms": "You can invite staff whether they use Android or iPhone — everyone shares the same inventory and syncs automatically."
+    },
+    "subscriptions": {
+      "ad_banner_title": "Zero Ads. Every Plan.",
+      "ad_banner_body": "No interruptions while you work — Free, Professional or Business. Same price on phone or tablet. 1 branch included.",
+      "current_section": "Your current plan",
+      "current_plan_free": "Free Plan",
+      "choose_section": "Choose a plan",
+      "compare_section": "Compare plans",
+      "manage_hint": "Cancel or change billing anytime in your App Store subscription settings.",
+      "why_upgrade_title": "Why businesses upgrade",
+      "why_bullet_0": "Track every product, not just 20",
+      "why_bullet_1": "Upload your product list straight from Excel",
+      "why_bullet_2": "Let staff scan without sharing your phone",
+      "why_bullet_3": "Plug in a handheld scanner for faster work (Professional & Business)",
+      "faq_title": "Common Questions",
+      "faq_q0": "What's the difference between Professional and Business?",
+      "faq_a0": "Choose Professional for a single shop: up to 1,000 products, Excel / CSV, up to 3 team members, Bluetooth scanner support and our full 500M+ product database. Choose Business for a mid-to-large store: unlimited products, unlimited team members and unlimited AI expiry + lot scanning for much faster data entry.",
+      "faq_q1": "Can I cancel anytime?",
+      "faq_a1": "Yes — cancel whenever you want. No contracts, no penalties, no questions asked.",
+      "faq_q2": "Do my staff pay extra?",
+      "faq_a2": "No. Team members are included in your one subscription — 3 on Professional, unlimited on Business.",
+      "faq_q3": "What happens to my data if I downgrade?",
+      "faq_a3": "Nothing is ever deleted. Back on Free, all your products stay safe and visible — even above 20. You just cannot add new ones until you are under 20 or upgrade again.",
+      "customer_center_button": "Manage subscription",
+      "customer_center_closed": "Customer Center closed.",
+      "customer_center_opened": "Customer Center opened.",
+      "errors": {
+        "customer_center_failed": "Unable to open Customer Center right now.",
+        "offering_not_available": "This subscription option is currently unavailable.",
+        "paywall_failed": "Unable to open paywall right now.",
+        "purchase_failed": "Purchase failed. Please try again.",
+        "restore_failed": "Restore failed. Please try again.",
+        "revenuecat_not_configured": "In-app purchases are not set up on this build. Update the app or try again later."
+      },
+      "paywall_button": "View paywall",
+      "paywall_closed": "Paywall closed.",
+      "guest_sign_in_required": "Please sign in first to subscribe to a plan.",
+      "purchase_cancelled": "Purchase cancelled.",
+      "purchase_success": "Subscription activated successfully.",
+      "restore_button": "Restore purchases",
+      "restore_cancelled": "Purchase restore was cancelled.",
+      "restore_success": "Purchases restored successfully.",
+      "current_plan_professional": "Professional Plan",
+      "current_plan_business": "Business Plan",
+      "current_plan_standard": "Professional Plan",
+      "current_plan_pro": "Business Plan",
+      "offline_banner_message": "You're offline. Live prices and subscriptions require an internet connection.",
+      "offline_retry": "Retry",
+      "legal_footer_renewal": "Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your App Store Account Settings.",
+      "legal_footer_consent": "By subscribing you agree to our Terms of Use and Privacy Policy."
+    },
+    "plans": {
+      "save_percent": "Save 30%",
+      "cta_current": "✓ Your current plan",
+      "cta_manage": "Manage subscription",
+      "cta_included": "Included in your plan",
+      "cta_upgrade": "Upgrade now",
+      "cta_offline": "Connect to subscribe",
+      "badge_popular": "Most popular",
+      "free": {
+        "title": "Free",
+        "subtitle": "Great for trying SimSim",
+        "f0_label": "Track up to 20 products",
+        "f0_sub": "Perfect for getting started with a small product list.",
+        "f1_label": "1 user — just you",
+        "f1_sub": "Use SimSim on your own phone or tablet.",
+        "f2_label": "Camera barcode scanning",
+        "f2_sub": "Point your phone camera, scan, and you're done.",
+        "f3_label": "AI Expiry Scanning (5 free trials)",
+        "f3_sub": "Try AI date scanning 5 times, then enter dates manually or upgrade to Business.",
+        "f4_label": "4M+ food & grocery products",
+        "f4_sub": "Instantly recognizes everyday food items when you scan.",
+        "f5_label": "Smart expiry alerts",
+        "f5_sub": "Get notified before products expire.",
+        "f6_label": "Backup & restore your data",
+        "f6_sub": "Keep your product list safe with a backup file.",
+        "f7_label": "Excel / CSV import & export",
+        "f7_sub": "Upgrade to Professional or Business to upload and download spreadsheet files.",
+        "f8_label": "500M+ product database",
+        "f8_sub": "Upgrade to Professional or Business for our largest product database.",
+        "f9_label": "Bluetooth scanner support",
+        "f9_sub": "Available on Professional and Business."
+      },
+      "professional": {
+        "title": "Professional",
+        "subtitle": "Room to grow",
+        "f0_label": "Track up to 1,000 products",
+        "f0_sub": "Plenty of room to grow your inventory list.",
+        "f1_label": "Up to 3 team members",
+        "f1_sub": "Let your staff scan and track products on their own phones.",
+        "f2_label": "Camera barcode scanning",
+        "f2_sub": "Point your phone camera, scan, and you're done.",
+        "f3_label": "AI Expiry Scanning",
+        "f3_sub": "Available on Business — enter expiry manually on Professional, or upgrade.",
+        "f4_label": "500M+ local & international products",
+        "f4_sub": "Our largest database — far more local, global and specialty items.",
+        "f5_label": "Smart expiry alerts",
+        "f5_sub": "Get notified before products expire.",
+        "f6_label": "Backup & restore your data",
+        "f6_sub": "Keep your product list safe with a backup file.",
+        "f7_label": "Excel / CSV import & export",
+        "f7_sub": "Upload or download your product list using spreadsheet files.",
+        "f8_label": "Bluetooth scanner support",
+        "f8_sub": "Use a handheld Bluetooth barcode scanner for faster tracking."
+      },
+      "business": {
+        "title": "Business",
+        "subtitle": "Everything, designed for fast data entry",
+        "f0_label": "AI Auto-scan expiry dates & batch/lot numbers",
+        "f0_sub": "Snap a picture — AI fills expiry and lot/batch when printed.",
+        "f1_label": "Unlimited product entries",
+        "f1_sub": "Track as many products as your business needs — no limit.",
+        "f2_label": "Unlimited team members",
+        "f2_sub": "Built for larger stores, multiple shifts and warehouse teams.",
+        "f3_label": "Bluetooth scanner support",
+        "f3_sub": "Use a handheld Bluetooth barcode scanner for faster tracking.",
+        "f4_label": "500M+ local & international products",
+        "f4_sub": "Our largest database — far more local, global and specialty items.",
+        "f5_label": "Camera barcode scanning",
+        "f5_sub": "Point your phone camera, scan, and you're done.",
+        "f6_label": "Smart expiry alerts",
+        "f6_sub": "Get notified before products expire.",
+        "f7_label": "Backup & restore your data",
+        "f7_sub": "Keep your product list safe with a backup file.",
+        "f8_label": "Excel / CSV import & export",
+        "f8_sub": "Upload or download your product list using spreadsheet files."
+      },
+      "pro": {
+        "title": "Business",
+        "subtitle": "Everything, designed for fast data entry",
+        "f0_label": "AI Auto-scan expiry dates & batch/lot numbers",
+        "f0_sub": "Snap a picture — AI fills expiry and lot/batch when printed.",
+        "f1_label": "Unlimited product entries",
+        "f1_sub": "Track as many products as your business needs — no limit.",
+        "f2_label": "Unlimited team members",
+        "f2_sub": "Built for larger stores, multiple shifts and warehouse teams.",
+        "f3_label": "Bluetooth scanner support",
+        "f3_sub": "Use a handheld Bluetooth barcode scanner for faster tracking.",
+        "f4_label": "500M+ local & international products",
+        "f4_sub": "Our largest database — far more local, global and specialty items.",
+        "f5_label": "Camera barcode scanning",
+        "f5_sub": "Point your phone camera, scan, and you're done.",
+        "f6_label": "Smart expiry alerts",
+        "f6_sub": "Get notified before products expire.",
+        "f7_label": "Backup & restore your data",
+        "f7_sub": "Keep your product list safe with a backup file.",
+        "f8_label": "Excel / CSV import & export",
+        "f8_sub": "Upload or download your product list using spreadsheet files."
+      },
+      "cta_upgrade_professional": "Upgrade to Professional",
+      "cta_upgrade_business": "Upgrade to Business",
+      "cta_upgrade_standard": "Upgrade to Professional",
+      "cta_upgrade_pro": "Upgrade to Business",
+      "badge_recommended": "★ Recommended",
+      "standard": {
+        "title": "Professional",
+        "subtitle": "Room to grow",
+        "f0_label": "Track up to 1,000 products",
+        "f0_sub": "Plenty of room to grow your inventory list.",
+        "f1_label": "Up to 3 team members",
+        "f1_sub": "Let your staff scan and track products on their own phones.",
+        "f2_label": "Camera barcode scanning",
+        "f2_sub": "Point your phone camera, scan, and you're done.",
+        "f3_label": "AI Expiry Scanning",
+        "f3_sub": "Available on Business — enter expiry manually on Professional, or upgrade.",
+        "f4_label": "500M+ local & international products",
+        "f4_sub": "Our largest database — far more local, global and specialty items.",
+        "f5_label": "Smart expiry alerts",
+        "f5_sub": "Get notified before products expire.",
+        "f6_label": "Backup & restore your data",
+        "f6_sub": "Keep your product list safe with a backup file.",
+        "f7_label": "Excel / CSV import & export",
+        "f7_sub": "Upload or download your product list using spreadsheet files.",
+        "f8_label": "Bluetooth scanner support",
+        "f8_sub": "Use a handheld Bluetooth barcode scanner for faster tracking."
+      }
+    }
+  },
+  "products_history": {
+    "delete_title": "Delete product?",
+    "delete_message": "“{name}” will be removed from history. This cannot be undone.",
+    "saved": "Changes saved",
+    "section": {
+      "recent": "Recently added",
+      "this_week": "This week ({count})",
+      "older": "Earlier ({count})"
+    },
+    "empty": "No items yet",
+    "empty_subtitle": "Products you add will appear here, grouped by when they were added.",
+    "edit": {
+      "title": "Edit item",
+      "subtitle": "Update product details below"
+    },
+    "field": {
+      "place": "Location",
+      "category": "Category",
+      "expiry": "Expiry date",
+      "quantity": "Quantity"
+    },
+    "card": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "added_by": "Added by: {name}",
+      "added_by_unknown": "Added by: —"
+    },
+    "days": {
+      "expired": "Expired",
+      "today": "Expires today",
+      "remaining": "{days} days left",
+      "years_remaining": "{years} years left",
+      "months_remaining": "{months} months left",
+      "years_ago": "{years} years ago",
+      "months_ago": "{months} months ago",
+      "days_ago": "{days} days ago"
+    },
+    "error": {
+      "unknown_category": "That category is no longer available. Try again."
+    }
+  },
+  "notifications": {
+    "local": {
+      "channel_name": "Expiry reminders",
+      "channel_desc": "On-device reminders for products nearing expiry",
+      "title": {
+        "zero": "No items expiring soon",
+        "one": "1 item expiring soon",
+        "other": "{} items expiring soon"
+      },
+      "body_days": "{name} — expires in {days} days",
+      "body_today": "{name} — expires today",
+      "duration_today": "today",
+      "duration_tomorrow": "tomorrow",
+      "duration_2_days": "in 2 days",
+      "duration_days": "in {count} days",
+      "duration_week": "in a week",
+      "duration_weeks": "in {count} weeks",
+      "duration_2_weeks": "in 2 weeks",
+      "duration_month": "in a month",
+      "duration_2_months": "in 2 months",
+      "duration_3_months": "in 3 months",
+      "duration_early_week": "a week",
+      "duration_early_2_weeks": "2 weeks",
+      "duration_early_month": "a month",
+      "duration_early_2_months": "2 months",
+      "duration_early_3_months": "3 months",
+      "late_title_one": "1 item expires {duration}",
+      "late_title_other": "{count} items expire {duration}",
+      "early_title_one": "Reminder: 1 item expires {duration}",
+      "early_title_other": "Reminder: {count} items expire {duration}",
+      "early_title_duration_one": "1 item expiring soon within {duration}",
+      "early_title_duration_other": "{count} items expiring soon within {duration}",
+      "body_separator": ", ",
+      "digest_body_more": "{names} … ( +{count} more)",
+      "digest_within_7": "{count} within 7 days",
+      "digest_more_14": "{count} more within 14 days",
+      "digest_more_30": "{count} more within 30 days",
+      "digest_more_max": "{count} more within {days} days",
+      "digest_join": ", ",
+      "digest_join_and": ", and ",
+      "unnamed_product": "A product"
+    },
+    "title": "Expiry notifications",
+    "send_on": "Send alert on",
+    "which_day": "Which day should we remind you",
+    "my_alerts": "My alerts",
+    "my_alerts_sub": "Set how many days before expiry each alert fires",
+    "alert1": "First alert (optional)",
+    "alert1_sub": "One month before or any date you set",
+    "alert2": "Second alert (optional)",
+    "alert2_sub": "Last alert when product expires",
+    "phone_reminders": "Phone reminders",
+    "phone_reminders_sub": "Alerts sent to your phone",
+    "pick_time_hint": "Pick a time of day that fits your schedule",
+    "day": {
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday"
+    },
+    "ampm": {
+      "am": "AM",
+      "pm": "PM"
+    },
+    "alert1_on_expiry_day": "On expiry day",
+    "alert1_days_summary": "{days} days before expiry",
+    "alert2_on_expiry_day": "On expiry day",
+    "alert2_days_summary": "{days} days before expiry",
+    "alert1_days_title": "First alert — days before expiry",
+    "alert1_days_hint": "e.g. 30",
+    "alert2_days_title": "Second alert — days before expiry",
+    "alert2_days_hint": "e.g. 7",
+    "save_success": "Notification settings saved",
+    "save_error_generic": "Could not save notification settings. Try again.",
+    "validation_no_weekdays": "Select at least one day",
+    "validation_alert2_gt_alert1": "Second alert must be on or before the first",
+    "alert_days_error_empty": "Enter a number of days",
+    "alert_days_error_range": "Enter a number between {min} and {max}",
+    "pick_weekday_hint": "Choose the days you want reminders",
+    "header": "My alerts",
+    "header_sub": "These alerts are just for you — every team member sets their own. Nothing here is shared.",
+    "offline_note": "Phone reminders are scheduled on this device and work offline. Push notifications are a backup when you are online.",
+    "which_alerts": "Which alerts do I want?",
+    "early_title": "Early alert",
+    "optional": "optional",
+    "early_desc": "Enough time to discount or rotate stock",
+    "last_title": "Final alert",
+    "last_desc": "Last chance to pull the product off the shelf",
+    "when_title": "When should they reach me?",
+    "send_at_time": "Send my alerts at",
+    "work_days": "On my working days",
+    "early_opt_7": "7 days",
+    "early_opt_14": "2 weeks",
+    "early_opt_30": "1 month",
+    "early_opt_60": "2 months",
+    "early_opt_90": "3 months",
+    "last_opt_0": "Expiry day",
+    "last_opt_1": "1 day before",
+    "last_opt_3": "3 days before",
+    "last_opt_7": "7 days before",
+    "summary_label": "In plain words",
+    "summary_none": "Nothing — both alerts are off right now.",
+    "summary_send_at": "This phone gets an alert at {time}",
+    "summary_early_part": "early ({label})",
+    "summary_last_part": "and at the deadline ({label})",
+    "summary_join": ", ",
+    "next_label": "Next notification:",
+    "next_today": "Today {time}",
+    "next_tomorrow": "Tomorrow {time}",
+    "next_on_day": "{day} {time}",
+    "permission_off_title": "Notifications are off",
+    "permission_off_body": "System notifications are disabled for this app, so alerts won't reach you. Enable them to continue.",
+    "permission_enable_btn": "Enable notifications",
+    "test_button": "Send a test notification",
+    "test_local_button": "Test local notification",
+    "test_fcm_button": "Test push (FCM)",
+    "test_sending": "Sending…",
+    "test_sent": "Test sent — you should see one now, and another in about 1 minute.",
+    "test_local_sent": "Local test sent — you should see one now, and another in about 1 minute.",
+    "test_fcm_sent": "FCM test sent — check that a push arrives on this device.",
+    "test_no_devices": "Notifications are off. Tap Enable notifications first.",
+    "test_not_signed_in": "Sign in first to send a test notification.",
+    "test_failed": "Couldn't schedule the local test alarm. Check notification permission.",
+    "test_fcm_failed": "Couldn't send the FCM test push. Check network and device token registration.",
+    "test_push_title": "SimSim",
+    "test_push_body": "Test notification — your alerts are working ✅"
+  },
+  "subscription": {
+    "employee_guard_notice": "Only store administrators can access plans and subscriptions. Please contact your store admin.",
+    "billing": {
+      "choose_save": "Choose & save",
+      "monthly": "Monthly",
+      "monthly_caption": "Billed every month",
+      "yearly": "Yearly",
+      "yearly_caption": "Billed every year"
+    },
+    "why_upgrade_cta": "Tap to explore plan benefits",
+    "member": {
+      "owner": "Owner",
+      "pending": "Pending"
+    },
+    "paywall": {
+      "title": "Professional feature",
+      "title_business": "Business feature",
+      "upgrade_cta": "Upgrade now",
+      "later": "Maybe later",
+      "understood": "I understand",
+      "employee_business_notice": "This feature requires the Business plan. Please contact your store administrator to upgrade the subscription.",
+      "employee_upgrade_notice": "This feature requires a plan upgrade. Please contact your store administrator to manage subscriptions.",
+      "feature_team": "Inviting staff and managing team permissions is a paid feature. Upgrade to use it.",
+      "feature_import": "Importing products from an Excel file is a paid feature. Upgrade to use it.",
+      "feature_export": "Downloading and exporting your products to Excel is a paid feature. Upgrade to use it.",
+      "feature_expiry_scan": "Scanning the expiry date with the camera is a paid feature. Upgrade to access it.",
+      "product_limit": "You've reached your plan's limit ({limit} products). Upgrade to add more.",
+      "branch_limit": "You've reached your plan's branch limit ({limit} branches). Upgrade to a higher plan to add more branches.",
+      "feature_bluetooth_scanner": "The external Bluetooth barcode scanner is available on Professional and Business. Upgrade to unlock it.",
+      "team_limit": "You have reached your plan’s team size ({limit} members). Upgrade to Business for unlimited members."
+    }
+  },
+  "store": {
+    "edit": {
+      "validation": "Please enter store name",
+      "error": "Could not save store name. Check your connection and try again.",
+      "success": "Store updated",
+      "title": "Edit store",
+      "subtitle": "Edit the store name below",
+      "field": "Store name",
+      "hint": "Enter store name"
+    }
+  },
+  "products_export": {
+    "action": "Export ({count} products)",
+    "columns": {
+      "added_at": "Added date",
+      "barcode": "Barcode",
+      "category": "Category",
+      "expiration_date": "Expiration date",
+      "expiry_status": "Expiry status",
+      "product_name": "Product name",
+      "quantity": "Quantity",
+      "section_title": "Included columns",
+      "title": "Your file will include these columns",
+      "warehouse": "Warehouse"
+    },
+    "status": {
+      "ok": "OK",
+      "expiring_soon": "Expiring soon",
+      "expired": "Expired"
+    },
+    "empty": {
+      "message": "No products to export yet. Add products in Inventory, then return here."
+    },
+    "error": {
+      "export_failed": "Could not create export file",
+      "load_failed": "Could not load export preview",
+      "no_products": "No products match the selected scope"
+    },
+    "options": {
+      "download": "Download to device",
+      "share": "Share file",
+      "title": "Save export file"
+    },
+    "scope": {
+      "all_sub": "Every product line in this store ({count} total)",
+      "all_title": "All products",
+      "category_sub": "Tap to choose a category",
+      "category_title": "Single category",
+      "pick_category": "Choose category",
+      "section_description": "Choose whether to export your full inventory or a single category.",
+      "section_title": "Export scope"
+    },
+    "success": {
+      "downloaded": "File saved to your device",
+      "exported": "Product file ready to share"
+    },
+    "summary": {
+      "categories": "Categories",
+      "format_badge": "XLSX · Google Sheets · Excel",
+      "products": "Products"
+    },
+    "tips": "The file is XLSX format and opens in Excel, Google Sheets, and similar apps. Arabic product names display correctly.",
+    "title": "Export products"
+  },
+  "products_import": {
+    "columns": {
+      "added_at": "Added date",
+      "barcode": "Barcode",
+      "category": "Category",
+      "expiration_date": "Expiration date",
+      "optional": "Optional",
+      "product_name": "Product name",
+      "quantity": "Quantity",
+      "required": "Required",
+      "section_title": "Spreadsheet columns",
+      "title": "Your file must include these columns",
+      "warehouse": "Warehouse"
+    },
+    "confirm": {
+      "import_valid": "Import valid rows",
+      "partial_body": "{valid} rows are valid and {invalid} rows have errors. Invalid rows will be skipped.",
+      "partial_title": "Import valid rows only?"
+    },
+    "error": {
+      "empty_file": "The file has no product rows",
+      "import_failed": "Could not import products",
+      "invalid_date": "Invalid expiration date",
+      "invalid_file": "Invalid or unsupported file",
+      "invalid_quantity": "Invalid quantity",
+      "invalid_row": "Invalid row",
+      "missing_category": "Missing category",
+      "missing_date": "Missing expiration date",
+      "missing_name": "Missing product name",
+      "missing_quantity": "Missing quantity",
+      "missing_warehouse": "Missing warehouse",
+      "parse_failed": "Could not read the file",
+      "template_failed": "Could not create template file",
+      "unsupported_format": "Unsupported file format"
+    },
+    "format": {
+      "section_description": "Prepare a spreadsheet with the columns below before uploading.",
+      "section_title": "File format",
+      "tip_date": "Dates must use YYYY-MM-DD (e.g. 2026-12-31). Excel date cells are also accepted.",
+      "tip_export_compatible": "Files exported from SimSim can be re-imported directly.",
+      "tip_first_sheet": "All worksheets that contain products are read.",
+      "tip_ignore_status": "Expiry status is calculated automatically — no expiry_status column needed.",
+      "title": "Format requirements"
+    },
+    "pick_file": "Choose file",
+    "preview": {
+      "action": "Import {count} products",
+      "all_invalid": "All {count} rows are invalid — fix the file and try again",
+      "auto_create_title": "Will be created automatically",
+      "file_name": "File",
+      "footer_summary": "{valid} will be imported, {invalid} skipped",
+      "invalid_rows": "Invalid rows",
+      "invalid_summary": "{count} rows will be skipped",
+      "new_categories": "New categories: {names}",
+      "new_warehouses": "New warehouses: {names}",
+      "ready": "Ready",
+      "review_title": "Review before import",
+      "summary_title": "Import summary",
+      "title": "Review import",
+      "total_rows": "Total rows",
+      "truncated": "Showing {shown} of {total} rows",
+      "valid_rows": "Valid",
+      "will_not_import": "Will not import"
+    },
+    "success": {
+      "imported": "Products imported successfully",
+      "imported_over_limit": "Imported {imported} products. {skipped} were skipped because your plan is limited to {limit} products. Upgrade to add more."
+    },
+    "summary": {
+      "format_badge": "XLSX · CSV · XLS"
+    },
+    "table": {
+      "barcode": "Barcode",
+      "category": "Category",
+      "expiration_date": "Expiry",
+      "product_name": "Product",
+      "quantity": "Qty",
+      "row": "#",
+      "status": "Status",
+      "warehouse": "Warehouse"
+    },
+    "template": {
+      "action": "Download template",
+      "options_title": "Save template",
+      "download": "Download to device",
+      "share": "Share file",
+      "downloaded": "Template saved to your device"
+    },
+    "tips": "Use the first row for column headers. Files exported from SimSim import without changes. Arabic text is supported.",
+    "title": "Import products",
+    "default_category": "Uncategorized",
+    "error_fix": {
+      "missing_name": "Add a product name in the “Product” column, then retry.",
+      "invalid_quantity": "Enter a whole number (0 or more) in the “Quantity” column, or leave it blank for 0.",
+      "missing_date": "Add an expiry date in the “Expiry date” column, e.g. 2027-10-24.",
+      "invalid_date": "Date format not recognized — use e.g. 2027-10-24 or 24/10/2027.",
+      "invalid_row": "Review and fix this row, then re-import."
+    }
+  },
+  "onboarding": {
+    "language": {
+      "title": "Choose app language"
+    }
+  },
+  "sync": {
+    "auto_hint": "Auto-syncs every 20 seconds",
+    "syncing": "Syncing…",
+    "synced_just_now": "just now",
+    "synced_secs": "{n}s",
+    "synced_mins": "{n}m",
+    "synced_prefix": "synced"
+  },
+  "guest_notice": {
+    "title": "⚠️ Heads up",
+    "got_it": "Got it",
+    "body": "You can browse as a guest to get a feel for how the app works. Just note that your data is saved on this phone only — it won’t be backed up or available on another device unless you create a free account."
+  }
+}
